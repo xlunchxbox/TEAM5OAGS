@@ -32,7 +32,7 @@ class User < ActiveRecord::Base
   
   before_save { |user| user.email = email.downcase }
   before_save :create_remember_token
-  before_save { |user| user.username = user.downcase }
+  before_save { |user| user.username = username.downcase }
   
   validates :username, presence: true, length: {maximum: 25},
             uniqueness: {case_sensitive: false}
@@ -41,7 +41,7 @@ class User < ActiveRecord::Base
   validates :email, presence: true, format: {with: VALID_EMAIL_REGEX}
 
   validates :password, presence: true, length: {minimum: 10}
-  validates :passsword_confirmation, presence: true
+  validates :password_confirmation, presence: true
   
   private
     def create_remember_token

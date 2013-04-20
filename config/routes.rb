@@ -1,5 +1,5 @@
 TEAM5OAGS::Application.routes.draw do
-    
+  resources :testimonials
   match '/about', to: 'static_pages#about'
   match '/chat', to: 'static_pages#chat'
   match '/testimonials', to: 'static_pages#testimonials'
@@ -7,6 +7,7 @@ TEAM5OAGS::Application.routes.draw do
   
 
   resources :owners
+  
 
   resources :sessions, only: [:new, :create, :destroy]
   match '/signup',  to: 'customers#new'
@@ -19,7 +20,7 @@ TEAM5OAGS::Application.routes.draw do
   resources :transactions
 
 
-  resources :testimonials
+
 
 
   resources :employees

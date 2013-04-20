@@ -23,4 +23,6 @@
 
 class Artist < User
   attr_accessible :date_deceased, :date_of_birth
+  has_many :works
+  has_many :customers, :through => :transactions
 end

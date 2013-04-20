@@ -53,15 +53,11 @@ ActiveRecord::Schema.define(:version => 20130420174145) do
   end
 
   create_table "transactions", :force => true do |t|
-    t.float    "acquisition_price", :null => false
-    t.float    "asking_price"
-    t.date     "date_acquired",     :null => false
-    t.date     "date_sold",         :null => false
-    t.float    "sales_price",       :null => false
-    t.integer  "customer_id",       :null => false
-    t.integer  "work_id",           :null => false
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.float    "sales_price"
+    t.integer  "customer_id", :null => false
+    t.integer  "work_id",     :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "users", :force => true do |t|
@@ -86,14 +82,18 @@ ActiveRecord::Schema.define(:version => 20130420174145) do
   add_index "users", ["username"], :name => "index_users_on_username", :unique => true
 
   create_table "works", :force => true do |t|
-    t.string   "title",       :null => false
-    t.string   "medium",      :null => false
-    t.text     "description", :null => false
-    t.string   "copy",        :null => false
-    t.integer  "artist_id",   :null => false
+    t.string   "title",             :null => false
+    t.string   "medium",            :null => false
+    t.text     "description",       :null => false
+    t.string   "copy",              :null => false
+    t.integer  "artist_id",         :null => false
     t.string   "img_url"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.float    "acquisition_price", :null => false
+    t.float    "asking_price"
+    t.date     "date_acquired",     :null => false
+    t.date     "date_sold"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
 end

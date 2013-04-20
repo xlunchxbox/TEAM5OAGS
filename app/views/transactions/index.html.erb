@@ -2,10 +2,6 @@
 
 <table>
   <tr>
-    <th>Acquisition price</th>
-    <th>Asking price</th>
-    <th>Date acquired</th>
-    <th>Date sold</th>
     <th>Sales price</th>
     <th>Customer</th>
     <th>Work</th>
@@ -16,10 +12,6 @@
 
 <% @transactions.each do |transaction| %>
   <tr>
-    <td><%= transaction.acquisition_price %></td>
-    <td><%= transaction.asking_price %></td>
-    <td><%= transaction.date_acquired %></td>
-    <td><%= transaction.date_sold %></td>
     <td><%= transaction.sales_price %></td>
     <td><%= transaction.customer_id %></td>
     <td><%= transaction.work_id %></td>

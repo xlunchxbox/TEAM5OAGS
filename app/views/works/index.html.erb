@@ -2,11 +2,15 @@
 
 <table>
   <tr>
+	<th>Artist</th>
     <th>Title</th>
     <th>Medium</th>
     <th>Description</th>
     <th>Copy</th>
-    <th>Artist</th>
+    <th>Acquisition price</th>
+    <th>Asking price</th>
+    <th>Date acquired</th>
+    <th>Date sold</th>
     <th>Img url</th>
     <th></th>
     <th></th>
@@ -15,11 +19,15 @@
 
 <% @works.each do |work| %>
   <tr>
+    <td><%= work.artist_id %></td>
     <td><%= work.title %></td>
     <td><%= work.medium %></td>
     <td><%= work.description %></td>
     <td><%= work.copy %></td>
-    <td><%= work.artist_id %></td>
+    <td><%= work.acquisition_price %></td>
+    <td><%= work.asking_price %></td>
+    <td><%= work.date_acquired %></td>
+    <td><%= work.date_sold %></td>
     <td><%= work.img_url %></td>
     <td><%= link_to 'Show', work %></td>
     <td><%= link_to 'Edit', edit_work_path(work) %></td>

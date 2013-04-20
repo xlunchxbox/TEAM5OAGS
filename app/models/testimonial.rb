@@ -10,5 +10,6 @@
 #
 
 class Testimonial < ActiveRecord::Base
-  attr_accessible :content, :customer_id
+  attr_accessible :content, :customer_id 
+  belongs_to :customer, :foreign_key => :customer_id
 end
