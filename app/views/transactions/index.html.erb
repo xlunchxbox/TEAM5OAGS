@@ -1,10 +1,16 @@
-<h1>Listing transactions</h1>
+<h1>Listing Transactions</h1>
 
 <table>
   <tr>
-    <th>Sales price</th>
-    <th>Customer</th>
-    <th>Work</th>
+    <th>Transaction ID</th>
+    <th>Customer ID</th>
+	<th>Customer First Name</th>
+	<th>Customer Last Name</th>
+    <th>Work ID</th>
+	<th>Work Title</th>
+	<th>Sales Price</th>
+	<th>Acquisition Price</th>
+	<th>Profit</th>
     <th></th>
     <th></th>
     <th></th>
@@ -12,9 +18,16 @@
 
 <% @transactions.each do |transaction| %>
   <tr>
-    <td><%= transaction.sales_price %></td>
-    <td><%= transaction.customer_id %></td>
+    <td><%= transaction.id %></td>
+	<td><%= transaction.customer_id %></td>
+	<td><%= transaction.customer.first_name %></td>
+	<td><%= transaction.customer.last_name %></td>
     <td><%= transaction.work_id %></td>
+	<td><%= transaction.work.title %></td>
+	<td><%= transaction.sales_price %></td>
+	<td><%= transaction.work.acquisition_price %></td>
+	
+	
     <td><%= link_to 'Show', transaction %></td>
     <td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
     <td><%= link_to 'Destroy', transaction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
