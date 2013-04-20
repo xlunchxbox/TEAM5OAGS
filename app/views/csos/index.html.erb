@@ -1,0 +1,21 @@
+<h1>Listing csos</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @csos.each do |cso| %>
+  <tr>
+    <td><%= link_to 'Show', cso %></td>
+    <td><%= link_to 'Edit', edit_cso_path(cso) %></td>
+    <td><%= link_to 'Destroy', cso, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cso', new_cso_path %>

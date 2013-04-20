@@ -1,0 +1,21 @@
+<h1>Listing dbas</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dbas.each do |dba| %>
+  <tr>
+    <td><%= link_to 'Show', dba %></td>
+    <td><%= link_to 'Edit', edit_dba_path(dba) %></td>
+    <td><%= link_to 'Destroy', dba, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dba', new_dba_path %>

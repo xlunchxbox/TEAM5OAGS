@@ -1,0 +1,39 @@
+==================================================
+Rails Generate Commands for TEAM5OAGS' Scaffolding
+==================================================
+
+rails g scaffold User first_name:string last_name:string street:string city:string zip:integer state:string area_code:integer phone_number:integer country:string password_digest:string remember_token:string username:string email:string type:string
+
+rails g scaffold Artist date_of_birth:date date_deceased:date 
+
+rails g scaffold Customer 
+
+rails g scaffold Dba 
+
+rails g scaffold Cso
+
+rails g scaffold Employee
+
+rails g scaffold Testimonial content:text customer_id:integer
+
+rails g scaffold Transaction acquisition_price:float asking_price:float date_acquired:date date_sold:date sales_price:float customer_id:integer work_id:integer
+
+rails g scaffold Work title:string medium:string description:text copy:string artist_id:integer img_url:string
+
+rails g scaffold Owner
+
+
+==================================================
+Rails Generate Commands for TEAM5OAGS' Controllers
+==================================================
+rails g controller Reports 
+
+rails g controller Sessions new create destroy
+
+
+
+=================================================
+Rails Generate Commands for TEAM5OAGS' Migrations
+=================================================
+
+rails g migration add_username_uniqueness_index
