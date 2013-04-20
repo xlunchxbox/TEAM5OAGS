@@ -26,6 +26,8 @@ rails g scaffold Owner
 ==================================================
 Rails Generate Commands for TEAM5OAGS' Controllers
 ==================================================
+rails g controller static_pages home about chat testimonials gallery
+
 rails g controller Reports 
 
 rails g controller Sessions new create destroy

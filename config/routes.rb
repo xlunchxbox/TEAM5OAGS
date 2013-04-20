@@ -1,12 +1,17 @@
 TEAM5OAGS::Application.routes.draw do
+    
+  match '/about', to: 'static_pages#about'
+  match '/chat', to: 'static_pages#chat'
+  match '/testimonials', to: 'static_pages#testimonials'
+  match '/gallery', to: 'static_pages#gallery'
+  
+
   resources :owners
 
-
-  get "sessions/new"
-
-  get "sessions/create"
-
-  get "sessions/destroy"
+  resources :sessions, only: [:new, :create, :destroy]
+  match '/signup',  to: 'customers#new'
+  match '/signin',  to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
 
   resources :works
 
@@ -33,6 +38,8 @@ TEAM5OAGS::Application.routes.draw do
 
 
   resources :users
+  
+  root to: 'static_pages#home'
 
 
   # The priority is based upon order of creation:

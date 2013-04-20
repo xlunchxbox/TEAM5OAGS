@@ -10,17 +10,20 @@
       </ul>
     </div>
   <% end %>
+  <div class="row">
+    <div class="span6 offset3">
+	  <div class="field">
+	    <%= f.label :customer_id %><br />
+	    <%= f.text_field :customer_id %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :content %><br />
+	    <%= f.text_area :content %>
+	  </div>
 
-  <div class="field">
-    <%= f.label :customer_id %><br />
-    <%= f.text_field :customer_id %>
+	  <div class="actions">
+	    <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+	  </div>
   </div>
-  <div class="field">
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+</div>
 <% end %>

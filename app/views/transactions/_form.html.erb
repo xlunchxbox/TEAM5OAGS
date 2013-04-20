@@ -10,36 +10,39 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :customer_id %><br />
-    <%= f.text_field :customer_id %>
+  <div class="row">
+    <div class="span6 offset3">
+	  <div class="field">
+	    <%= f.label :customer_id %><br />
+	    <%= f.text_field :customer_id %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :work_id %><br />
+	    <%= f.text_field :work_id %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :acquisition_price %><br />
+	    <%= f.text_field :acquisition_price %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :asking_price %><br />
+	    <%= f.text_field :asking_price %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :date_acquired %><br />
+	    <%= f.date_select :date_acquired %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :date_sold %><br />
+	    <%= f.date_select :date_sold %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :sales_price %><br />
+	    <%= f.text_field :sales_price %>
+	  </div>
+	  <div class="actions">
+	    <%= f.submit "Process Transaction", class: "btn btn-large btn-primary" %>
+	  </div>
   </div>
-  <div class="field">
-    <%= f.label :work_id %><br />
-    <%= f.text_field :work_id %>
-  </div>
-  <div class="field">
-    <%= f.label :acquisition_price %><br />
-    <%= f.text_field :acquisition_price %>
-  </div>
-  <div class="field">
-    <%= f.label :asking_price %><br />
-    <%= f.text_field :asking_price %>
-  </div>
-  <div class="field">
-    <%= f.label :date_acquired %><br />
-    <%= f.date_select :date_acquired %>
-  </div>
-  <div class="field">
-    <%= f.label :date_sold %><br />
-    <%= f.date_select :date_sold %>
-  </div>
-  <div class="field">
-    <%= f.label :sales_price %><br />
-    <%= f.text_field :sales_price %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+</div>
 <% end %>
