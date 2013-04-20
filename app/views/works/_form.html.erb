@@ -12,6 +12,10 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :artist_id %><br />
+    <%= f.text_field :artist_id %>
+  </div>
+  <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </div>
@@ -28,12 +32,8 @@
     <%= f.text_field :copy %>
   </div>
   <div class="field">
-    <%= f.label :artist_id %><br />
-    <%= f.number_field :artist_id %>
-  </div>
-  <div class="field">
     <%= f.label :img_url %><br />
-    <%= f.text_field :img_url %>
+    <%= f.url_field :img_url %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -12,6 +12,14 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
     <%= f.label :first_name %><br />
     <%= f.text_field :first_name %>
   </div>
@@ -28,44 +36,32 @@
     <%= f.text_field :city %>
   </div>
   <div class="field">
-    <%= f.label :zip %><br />
-    <%= f.number_field :zip %>
-  </div>
-  <div class="field">
     <%= f.label :state %><br />
     <%= f.text_field :state %>
   </div>
   <div class="field">
-    <%= f.label :area_code %><br />
-    <%= f.number_field :area_code %>
-  </div>
-  <div class="field">
-    <%= f.label :phone_number %><br />
-    <%= f.number_field :phone_number %>
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
   </div>
   <div class="field">
     <%= f.label :country %><br />
     <%= f.text_field :country %>
   </div>
   <div class="field">
-    <%= f.label :password_digest %><br />
-    <%= f.text_field :password_digest %>
+    <%= f.label :area_code %><br />
+    <%= f.telephone_field :area_code %>
   </div>
   <div class="field">
-    <%= f.label :remember_token %><br />
-    <%= f.text_field :remember_token %>
+    <%= f.label :phone_number %><br />
+    <%= f.telephone_field :phone_number %>
   </div>
   <div class="field">
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
   </div>
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :type %><br />
-    <%= f.text_field :type %>
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation %>
   </div>
   <div class="actions">
     <%= f.submit %>

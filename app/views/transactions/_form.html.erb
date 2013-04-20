@@ -12,6 +12,14 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :customer_id %><br />
+    <%= f.text_field :customer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :work_id %><br />
+    <%= f.text_field :work_id %>
+  </div>
+  <div class="field">
     <%= f.label :acquisition_price %><br />
     <%= f.text_field :acquisition_price %>
   </div>
@@ -30,14 +38,6 @@
   <div class="field">
     <%= f.label :sales_price %><br />
     <%= f.text_field :sales_price %>
-  </div>
-  <div class="field">
-    <%= f.label :customer_id %><br />
-    <%= f.number_field :customer_id %>
-  </div>
-  <div class="field">
-    <%= f.label :work_id %><br />
-    <%= f.number_field :work_id %>
   </div>
   <div class="actions">
     <%= f.submit %>
