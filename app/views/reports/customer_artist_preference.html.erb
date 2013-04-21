@@ -1,0 +1,17 @@
+
+<h2><%= @transactions.first.customer.last_name %>, <%= @transactions.first.customer.first_name %> Preference Report</h2>
+
+<table>
+	<tr>
+		<th>Artist Name</th>
+		<th>Country</th>
+		<th>Date Sold</th>
+	</tr>
+	<% @transactions.each do |k| %>
+	<tr>
+		<td><%= k.work.artist.last_name %>, <%= k.work.artist.first_name %></td>
+		<td><%= k.work.artist.country %></td>
+		<td><%= k.date_sold %></td>
+	</tr>
+	<% end %>
+</table>

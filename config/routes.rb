@@ -1,4 +1,14 @@
 TEAM5OAGS::Application.routes.draw do
+  get "reports/customer_artist_preference"
+
+  get "reports/past_purchase"
+
+  get "reports/past_purchase_artwork_location"
+
+  get "reports/artist_works"
+
+  get "reports/speed_of_sale"
+
   resources :testimonials
   match '/about', to: 'static_pages#about'
   match '/chat', to: 'static_pages#chat'

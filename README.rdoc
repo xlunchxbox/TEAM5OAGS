@@ -28,9 +28,10 @@ Rails Generate Commands for TEAM5OAGS' Controllers
 ==================================================
 rails g controller static_pages home about chat testimonials gallery
 
-rails g controller Reports 
+rails g controller Reports customer_artist_preference past_purchase past_purchase_artwork_location artist_works speed_of_sale
 
 rails g controller Sessions new create destroy
+
 
 
 

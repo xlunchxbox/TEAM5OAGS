@@ -1,0 +1,15 @@
+
+<table>
+	<tr>
+		<th>Acquisition Price</th>
+		<th>Sales Price</th>
+		<th>Profit</th>
+	</tr>
+	<% @transaction.each do |k| %>
+	<tr>
+		<td><%= k.work.acquisition_price %></td>
+		<td><%= k.sales_price %></td>
+		<td><%= k.sales_price - k.work.acquisition_price %></td>
+	</tr>
+	<% end %>
+</table>
