@@ -1,6 +1,6 @@
 <h1>Listing Transactions</h1>
 
-<table>
+<table class = "table table-bordered table-striped">
   <tr>
     <th>Transaction ID</th>
     <th>Customer ID</th>
@@ -11,9 +11,9 @@
 	<th>Sales Price</th>
 	<th>Acquisition Price</th>
 	<th>Profit</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Show</th>
+    <th>Edit</th>
+    <th>Destroy</th>
   </tr>
 
 <% @transactions.each do |transaction| %>
@@ -26,6 +26,7 @@
 	<td><%= transaction.work.title %></td>
 	<td><%= transaction.sales_price %></td>
 	<td><%= transaction.work.acquisition_price %></td>
+	<td></td>
 	
 	
     <td><%= link_to 'Show', transaction %></td>

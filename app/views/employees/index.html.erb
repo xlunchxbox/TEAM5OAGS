@@ -1,6 +1,6 @@
 <h1>Listing employees</h1>
 
-<table>
+<table class = "table table-bordered table-striped">
   <tr>
   	<th>Username</th>
   	<th>Email</th>
@@ -12,7 +12,9 @@
 	<th>Zip</th>
 	<th>Country</th>
 	<th>Phone Number</th>
-
+	<th>Show</th>
+	<th>Edit</th>
+	<th>Destroy</th>
   </tr>
 
 <% @employees.each do |employee| %>
@@ -26,7 +28,8 @@
 	<td><%= employee.state %></td>    
 	<td><%= employee.zip %></td>  
 	<td><%= employee.country %></td>  
-	<td>(<%= employee.area_code %>) <%= employee.phone_number%><td>
+	<td>(<%= employee.area_code %>) <%= employee.phone_number%></td>
+	
 			
     <td><%= link_to 'Show', employee %></td>
     <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
