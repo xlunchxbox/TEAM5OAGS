@@ -114,7 +114,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   bcrypt-ruby
-  bootstrap-sass
+  bootstrap-sass (= 2.1)
   bootstrap-will_paginate
   coffee-rails (~> 3.2.1)
   jquery-rails
