@@ -3,6 +3,7 @@ class TestimonialsController < ApplicationController
   # GET /testimonials.json
   def index
     @testimonials = Testimonial.all
+    @testimonials = Testimonial.search(params[:search])
 
     respond_to do |format|
       format.html # index.html.erb

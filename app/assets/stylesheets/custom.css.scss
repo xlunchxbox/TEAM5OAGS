@@ -247,6 +247,17 @@ aside {
 
 .testimonialcontent {
 	height:10px;
-	width:10px;
-	
+	width:10px;	
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.row {
+	padding-left: 10px;
+  margin-left: -20px;
+  *zoom: 1;
 }
