@@ -2,7 +2,7 @@ class DbasController < ApplicationController
   # GET /dbas
   # GET /dbas.json
   def index
-    is signed_in? && is_owner?
+    if signed_in? && is_owner?
       @dbas = Dba.all
 
       respond_to do |format|
