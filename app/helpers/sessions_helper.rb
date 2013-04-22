@@ -64,5 +64,21 @@ module SessionsHelper
   def is_artist?
     current_user.class == Artist
   end
+
+    #function to return the flash image for owner/employee privileges
+  def owner_emp_flash
+    flash[:error] = "You must be an Owner or Employee to view this!!"
+    redirect_to root_path
+  end
+
+  def not_correct_user
+    flash[:error] = "You do not have privileges to do this!"
+    redirect_to root_path
+  end
+
+  def not_dba_flash
+    flash[:error] = "You must be a DBA to do this!"
+    redirect_to root_path
+  end
   
 end

@@ -30,9 +30,6 @@ TEAM5OAGS::Application.routes.draw do
   resources :transactions
 
 
-
-
-
   resources :employees
 
 
