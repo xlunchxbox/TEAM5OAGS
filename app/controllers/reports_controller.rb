@@ -1,3 +1,9 @@
+# All controllers on this page are generated using scaffolding
+#in accordance with REST and MVC 
+#Created By: Gabe Ohlson, Joel Loucks
+#Database user checks: Joel Loucks & Gabe Ohlson
+#Date Approved: 4/22/2013 by Chris Cruz & Muhammad Naviwala
+
 class ReportsController < ApplicationController
   
   def customer_artist_preference
