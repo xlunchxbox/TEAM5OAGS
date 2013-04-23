@@ -26,4 +26,6 @@
 class Work < ActiveRecord::Base
   attr_accessible :artist_id, :copy, :description, :img_url, :medium, :title, :acquisition_price, :asking_price, :date_acquired, :date_sold
   belongs_to :artist, :foreign_key => :artist_id
+  has_many :transactions
+  has_many :customers, :through => :transactions
 end

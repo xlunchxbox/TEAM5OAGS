@@ -1,0 +1,5 @@
+<%= form_tag reports_past_purchase_artwork_location_path, method: 'get' do %> 
+	<%= text_field_tag :customer_id, params[:customer_id] %>
+
+	<%= submit_tag "Submit!", :name => nil %>
+<% end %>

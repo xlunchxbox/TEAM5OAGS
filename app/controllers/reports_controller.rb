@@ -7,24 +7,25 @@
 class ReportsController < ApplicationController
   
   def customer_artist_preference
-    @transactions = Transaction.where(customer_id: 1)
+    @transactions = Transaction.where(params[:customer_id])
     #@transactions = Transaction.find_by_customer_id(params[:id])
   end
 
   def past_purchase
-    @transactions = Transaction.where(params[:post])
+    @transaction = Transaction.where(params[:customer_id])
   end
 
   def past_purchase_artwork_location
-    @transactions = Transaction.where(params[:post])
+    @transactions = Transaction.where(params[:customer_id])
+    @customer = Customer.find(params[:customer_id])
   end
 
   def artist_works
-    @arists = Artist.all
+    @artist = Artist.find(params[:artist_id])
   end
 
   def speed_of_sale
-    @transactions = Transaction.where(work_id: 1)
+    @works = Work.joins(:transactions).where(params[:artist_id])
     #@works = Work.where(params[:post]).where('date_sold NOT NULL')
     #@works.each do |w|
     #  t = Transaction.find_by_work_id(w.id)

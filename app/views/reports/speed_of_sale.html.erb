@@ -1,15 +1,21 @@
-
+<h1>Speed of Sale Report!</h1>
 <table>
 	<tr>
-		<th>Acquisition Price</th>
+		<th>Work ID</th>
+		<th>Artist ID</th>
+		<th>Date Acquired</th>
+		<th>Date Sold</th>
+		<th>Asking Price</th>
 		<th>Sales Price</th>
 		<th>Profit</th>
 	</tr>
-	<% @transactions.each do |k| %>
+	<% @works.each do |k| %>
 	<tr>
-		<td><%= k.work.acquisition_price %></td>
-		<td><%= k.sales_price %></td>
-		<td><%= k.sales_price - k.work.acquisition_price %></td>
+		<td><%= k.id %></td>
+		<td><%= k.artist_id %></td>
+		<td><%= k.date_acquired %></td>
+		<td><%= k.date_sold %></td>
+		<td><%= k.asking_price%></td>
 	</tr>
 	<% end %>
 </table>
