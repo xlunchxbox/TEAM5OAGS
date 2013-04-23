@@ -5597,6 +5597,45 @@ a.thumbnail:focus {
   color: #555555;
 }
 
+/***********************************************************************/
+.main_container {
+    display: block;
+}
+
+.image_container {
+    float: left;
+    /*background-color: yellow;*/
+    text-align: center;
+    height: 375px;
+    width: 565px;
+    line-height: 375px;
+}
+
+.main_container img {
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 8px 5px #808080;
+    -webkit-box-shadow: 8px 8px 5px #808080;
+    -moz-box-shadow: 8px 8px 5px #808080;
+}
+
+.main_container > img {
+    display: block;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.image_summary {
+    float: left;
+    /*background-color: green;*/
+    height: 365px;
+    width: 355px;
+    padding: 5px 10px 5px 10px;
+}
+
+/*******************************************************************/
 .media,
 .media-body {
   overflow: hidden;

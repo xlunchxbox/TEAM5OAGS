@@ -13,6 +13,7 @@ class ReportsController < ApplicationController
 
   def past_purchase
     @transaction = Transaction.where(params[:customer_id])
+    @customer = Customer.find(params[:customer_id])
   end
 
   def past_purchase_artwork_location
