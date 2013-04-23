@@ -1,8 +1,15 @@
+# All controllers on this page are generated using scaffolding
+#in accordance with REST and MVC 
+#Created By:Chris Cruz, Muhammad Naviwala, Gabe Ohlson, Joel Loucks,Matt Liang, Ryan Lee
+#Database user checks: Joel Loucks & Gabe Ohlson
+#Date Approved: 4/22/2013 by Chris Cruz & Muhammad Naviwala
+
 class WorksController < ApplicationController
   # GET /works
   # GET /works.json
   def index
     @works = Work.all
+    @artists = Artist.all
 
     respond_to do |format|
       format.html # index.html.erb

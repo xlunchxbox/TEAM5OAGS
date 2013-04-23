@@ -1,3 +1,10 @@
+# All modules on this page are generated using scaffolding
+#in accordance with REST and MVC 
+#Created By:Joel Loucks & Gabe Ohlson, Chris Cruz, Muhammad Naviwala, Ryan Lee, Matt Liang
+#Database user checks, constraints by: Joel Loucks & Gabe Ohlson
+#Search method by: Chris Cruz
+#Date Approved: 4/22/2013 by Chris Cruz & Muhammad Naviwala
+
 # == Schema Information
 #
 # Table name: testimonials

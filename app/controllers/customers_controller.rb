@@ -1,8 +1,14 @@
+# All controllers on this page are generated using scaffolding
+#in accordance with REST and MVC 
+#Created By:Chris Cruz, Muhammad Naviwala, Gabe Ohlson, Joel Loucks,Matt Liang, Ryan Lee
+#Database user checks: Joel Loucks & Gabe Ohlson
+#Date Approved: 4/22/2013 by Chris Cruz & Muhammad Naviwala
+
 class CustomersController < ApplicationController
   # GET /customers
   # GET /customers.json
   def index
-    if signed_in? && (is_owner? || is_employee?)
+    if signed_in? && (is_owner? || is_employee? || is_dba?)
       @customers = Customer.all
 
       respond_to do |format|
@@ -17,7 +23,7 @@ class CustomersController < ApplicationController
   # GET /customers/1
   # GET /customers/1.json
   def show
-    if signed_in? && is_owner? || is_employee?
+    if signed_in? && is_customer?#is_owner? || is_employee?
       @customer = Customer.find(params[:id])
 
       respond_to do |format|
@@ -46,7 +52,7 @@ class CustomersController < ApplicationController
 
   # GET /customers/1/edit
   def edit
-    if signed_in? && is_dba? 
+    if signed_in? && is_customer? || is_dba?
       @customer = Customer.find(params[:id])
     else
       not_correct_user
@@ -76,7 +82,7 @@ class CustomersController < ApplicationController
   # PUT /customers/1
   # PUT /customers/1.json
   def update
-    if signed_in? && is_dba?
+    if signed_in? && is_dba? || is_customer?
       @customer = Customer.find(params[:id])
 
       respond_to do |format|

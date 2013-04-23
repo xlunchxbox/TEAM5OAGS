@@ -88,6 +88,7 @@ footer {
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
   color: #999;
+  
   a {
     color: #555;
     &:hover { 
@@ -257,7 +258,7 @@ aside {
 }
 
 .row {
-	padding-left: 10px;
+  padding-left: 10px;
   margin-left: -20px;
   *zoom: 1;
 }

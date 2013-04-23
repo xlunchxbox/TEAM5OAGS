@@ -1,12 +1,22 @@
+# All controllers on this page are generated using scaffolding
+#in accordance with REST and MVC 
+#Created By:Chris Cruz, Muhammad Naviwala, Gabe Ohlson, Joel Loucks,Matt Liang, Ryan Lee
+#Database user checks: Joel Loucks & Gabe Ohlson
+#Date Approved: 4/22/2013 by Chris Cruz & Muhammad Naviwala
+
 class OwnersController < ApplicationController
   # GET /owners
   # GET /owners.json
   def index
+    if signed_in? && is_owner?
     @owners = Owner.all
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @owners }
+    end
+    else
+      owner_emp_flash
     end
   end
 
