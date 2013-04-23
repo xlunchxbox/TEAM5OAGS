@@ -1,3 +1,9 @@
+  # routes page for application
+  #Gabe Ohlson
+  #Date Approved: 4/22/2013 by Chris Cruz & Muhammad Naviwala 
+
+
+
 TEAM5OAGS::Application.routes.draw do
   get "reports/customer_artist_preference"
 

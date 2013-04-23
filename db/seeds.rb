@@ -1,3 +1,7 @@
+# seed db page for application
+#Gabe Ohlson & Joel Loucks
+#Date Approved: 4/22/2013 by Chris Cruz & Muhammad Naviwala 
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #

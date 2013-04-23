@@ -10,6 +10,7 @@ class CustomersController < ApplicationController
   def index
     if signed_in? && (is_owner? || is_employee? || is_dba?)
       @customers = Customer.all
+      @testimonials = Testimonial.all
 
       respond_to do |format|
         format.html # index.html.erb
@@ -25,6 +26,7 @@ class CustomersController < ApplicationController
   def show
     if signed_in? && is_customer?#is_owner? || is_employee?
       @customer = Customer.find(params[:id])
+      @testimonials = Testimonial.all
 
       respond_to do |format|
         format.html # show.html.erb
@@ -84,7 +86,6 @@ class CustomersController < ApplicationController
   def update
     if signed_in? && is_dba? || is_customer?
       @customer = Customer.find(params[:id])
-
       respond_to do |format|
         if @customer.update_attributes(params[:customer])
           format.html { redirect_to @customer, notice: 'Customer was successfully updated.' }

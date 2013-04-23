@@ -1,3 +1,7 @@
+# schema page for application
+#Gabe Ohlson & Joel Loucks
+#Date Approved: 4/22/2013 by Chris Cruz & Muhammad Naviwala 
+
 # encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to

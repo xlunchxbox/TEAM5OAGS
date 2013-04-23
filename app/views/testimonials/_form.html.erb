@@ -1,3 +1,9 @@
+<!--
+  # _form page for testimonials
+  #Chris Cruz
+  #Date Approved: 4/22/2013 by Chris Cruz & Muhammad Naviwala 
+-->
+
 <%= form_for(@testimonial) do |f| %>
   <% if @testimonial.errors.any? %>
     <div id="error_explanation">
@@ -13,8 +19,8 @@
   <div class="row" >
     <div class="span6 offset3">
 	  <div class="field">
-	    <%= f.label :customer_id %><br />
-	    <%= f.text_field :customer_id %>
+		  <p>Customer</p><br />
+		  <%= f.collection_select :customer_id, Customer.find(:all), 			:id, :first_name, :prompt => "Please Select" %>  
 	  </div>
 	  
 	  <div class="field">
