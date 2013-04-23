@@ -14,6 +14,7 @@ class SessionsController < ApplicationController
     user = User.find_by_username(params[:session][:username].downcase)
     if user && user.authenticate(params[:session][:password])
       sign_in user
+      flash.keep[:notice] = 'Welcome to TEAM5OAGS. You are now logged in !!'
       redirect_back_or root_path
     else
       flash.now[:error] = 'Invalid email/password combination'

@@ -40,14 +40,24 @@ class User < ActiveRecord::Base
   before_save :create_remember_token
   before_save { |user| user.username = username.downcase }
   
-  validates :username, presence: true, length: {maximum: 25},
+  validates :username, presence: true, length: {minimum: 6, maximum: 15},
             uniqueness: {case_sensitive: false}
   
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, format: {with: VALID_EMAIL_REGEX}
 
-  validates :password, presence: true, length: {minimum: 6}
+  validates :password, presence: true, length: {minimum: 8}
   validates :password_confirmation, presence: true
+
+  validates :first_name, presence: true, length: {minimum: 1, maximum: 32}
+  validates :last_name, presence: true, length: {minimum: 1, maximum: 32}
+  validates :city, presence: true, length: {minimum: 1, maximum: 20}
+  validates :country, presence: true
+  validates :area_code, presence: true, length: {minimum: 3, maximum: 3}
+  validates :state, presence: true, length: {minimum: 1, maximum: 15}
+  validates :street, presence: true, length: {minimum: 2, maximum: 50}
+  validates :phone_number, presence: true, length: {minimum: 7, maximum: 7}
+  validates :zip, presence: true, length: {minimum: 4, maximum: 5}
   
   private
     def create_remember_token

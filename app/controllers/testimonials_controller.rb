@@ -31,11 +31,16 @@ class TestimonialsController < ApplicationController
   # GET /testimonials/new
   # GET /testimonials/new.json
   def new
-    @testimonial = Testimonial.new
+    if signed_in? && is_customer?
+      @testimonial = Testimonial.new
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @testimonial }
+      respond_to do |format|
+        format.html # new.html.erb
+        format.json { render json: @testimonial }
+      end
+    else
+      flash[:error] = "You must be signed in to do this"
+      redirect_to signin_path
     end
   end
 

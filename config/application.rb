@@ -1,3 +1,7 @@
+# config page for application
+#Gabe Ohlson & Joel Loucks
+#Date Approved: 4/22/2013 by Chris Cruz & Muhammad Naviwala 
+
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
