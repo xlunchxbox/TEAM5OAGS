@@ -8,6 +8,13 @@ TEAM5OAGS::Application.routes.draw do
   get "reports/artist_works"
 
   get "reports/speed_of_sale"
+  get "reports/input_artist_works"
+  get "reports/input_speed_sale"
+  get "reports/input_past_purchase"
+  get "reports/input_past_purchase_location"
+  get "reports/input_customer_artist_preference"
+
+
 
   resources :testimonials
   match '/about', to: 'static_pages#about'

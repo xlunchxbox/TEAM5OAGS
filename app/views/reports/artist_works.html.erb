@@ -1,15 +1,17 @@
 
+<h1> Works for <%= @artist.last_name %>, <%= @artist.first_name %> </h1>
+
 <table>
 	<tr>
-		<th>Acquisition Price</th>
-		<th>Sales Price</th>
-		<th>Profit</th>
+		<th>Title</th>
+		<th>Medium</th>
+		<th>Description</th>
 	</tr>
-	<% @transaction.each do |k| %>
+	<% @artist.works.each do |k| %>
 	<tr>
-		<td><%= k.work.acquisition_price %></td>
-		<td><%= k.sales_price %></td>
-		<td><%= k.sales_price - k.work.acquisition_price %></td>
+		<td><%= k.title %></td>
+		<td><%= k.medium %></td>
+		<td><%= k.description %></td>
 	</tr>
 	<% end %>
 </table>
