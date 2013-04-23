@@ -9,6 +9,7 @@ class WorksController < ApplicationController
   # GET /works.json
   def index
     @works = Work.all
+    @artists = Artist.all
 
     respond_to do |format|
       format.html # index.html.erb

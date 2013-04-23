@@ -8,11 +8,15 @@ class OwnersController < ApplicationController
   # GET /owners
   # GET /owners.json
   def index
+    if signed_in? && is_owner?
     @owners = Owner.all
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @owners }
+    end
+    else
+      owner_emp_flash
     end
   end
 

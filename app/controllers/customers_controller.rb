@@ -8,7 +8,7 @@ class CustomersController < ApplicationController
   # GET /customers
   # GET /customers.json
   def index
-    if signed_in? && (is_owner? || is_employee?)
+    if signed_in? && (is_owner? || is_employee? || is_dba?)
       @customers = Customer.all
 
       respond_to do |format|
@@ -52,7 +52,7 @@ class CustomersController < ApplicationController
 
   # GET /customers/1/edit
   def edit
-    if signed_in? && is_dba? 
+    if signed_in? && is_customer? || is_dba?
       @customer = Customer.find(params[:id])
     else
       not_correct_user
@@ -82,7 +82,7 @@ class CustomersController < ApplicationController
   # PUT /customers/1
   # PUT /customers/1.json
   def update
-    if signed_in? && is_dba?
+    if signed_in? && is_dba? || is_customer?
       @customer = Customer.find(params[:id])
 
       respond_to do |format|
