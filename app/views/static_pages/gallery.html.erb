@@ -2,26 +2,24 @@
 <p>Find me in app/views/static_pages/gallery.html.erb</p>
 
 <ul class="thumbnails">
-  <% @works.each do |w| %>
+  <% @works.each do |work| %>
       <li class="span4">
         <div class="thumbnail">
           <div class="thumbnail_container">
-            <a href='#'>
-              <%= image_tag("#{w.title}.png", :alt => "#{w.title}") %>
-            </a>
+            <%= image_tag("#{work.title}.png", :alt => "#{work.title}", :class => 'magnify') %>
           </div>
-          <h4><%= w.title %></h4>
-          <p>Medium: <%= w.medium %></p>
+          <h4><%= work.title %></h4>
+          <p>Medium: <%= work.medium %></p>
           <p>Stock:
-            <% if w.date_sold.nil? %>
+            <% if work.date_sold.nil? %>
               Out of stock
             <% else %>
               In stock
             <% end %>
           </p>
-          <p>Price: $<%= w.asking_price %></p>
+          <p>Price: $<%= work.asking_price %></p>
           <%= link_to 'Buy', '#', class: 'btn btn-primary' %>
-          <%= link_to 'More', '#', class: 'btn' %>
+          <%= link_to 'More', show_customer_work_path(work), class: 'btn' %>
         </div>
       </li>
   <% end %>

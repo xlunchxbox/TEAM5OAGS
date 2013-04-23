@@ -80,4 +80,8 @@ class WorksController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def show_customer
+    @work = Work.find(params[:id])
+  end
 end

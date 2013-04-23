@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<h3><%= @work.title %></h3>
+<div class="row">  <!-- This div is 425 pixels high -->
+  <%= image_tag("#{@work.title}.png", :alt => "#{@work.title}", :class => 'magnify') %>
+  <p>
+    <b>Title:</b>
+    <%= @work.title %>
+  </p>
+  <p>
+    <b>Medium:</b>
+    <%= @work.medium %>
+  </p>
+  <p>
+    <b>Price:</b>
+    <%= @work.asking_price %>
+  </p>
+  <p>
+    <b>Copy:</b>
+    <%= @work.copy %>
+  </p>
+  <p>
+    <b>Description:</b>
+    <%= @work.description %>
+  </p>
+  
+<%= link_to 'Back', gallery_path %>
+</div>

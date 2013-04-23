@@ -17,15 +17,17 @@ TEAM5OAGS::Application.routes.draw do
   
 
   resources :owners
-  
+
+  resources :works do
+    member do
+      get 'show_customer'
+    end
+  end
 
   resources :sessions, only: [:new, :create, :destroy]
   match '/signup',  to: 'customers#new'
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
-
-  resources :works
-
 
   resources :transactions
 
