@@ -21,7 +21,8 @@ class ReportsController < ApplicationController
   end
 
   def artist_works
-    @artist = Artist.find(params[:artist_id])
+    @artists = Artist.where("last_name LIKE ? OR first_name LIKE ?", params[:name], params[:name])
+    #@artist = Artist.find(params[:artist_id])
   end
 
   def speed_of_sale
