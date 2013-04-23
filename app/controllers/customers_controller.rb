@@ -23,7 +23,7 @@ class CustomersController < ApplicationController
   # GET /customers/1
   # GET /customers/1.json
   def show
-    if signed_in? && is_customer? #is_owner? || is_employee?
+    if signed_in? && is_customer?#is_owner? || is_employee?
       @customer = Customer.find(params[:id])
 
       respond_to do |format|
@@ -38,12 +38,16 @@ class CustomersController < ApplicationController
   # GET /customers/new
   # GET /customers/new.json
   def new
+    if signed_in? && is_dba?
      @customer = Customer.new
 
       respond_to do |format|
         format.html # new.html.erb
         format.json { render json: @customer }
       end
+    else
+      not_dba_flash
+    end
   end
 
   # GET /customers/1/edit
@@ -58,7 +62,7 @@ class CustomersController < ApplicationController
   # POST /customers
   # POST /customers.json
   def create
-    if !signed_in?
+    if signed_in? && is_dba?
      @customer = Customer.new(params[:customer])
 
       respond_to do |format|
@@ -70,8 +74,10 @@ class CustomersController < ApplicationController
           format.json { render json: @customer.errors, status: :unprocessable_entity }
         end
       end
+    else
+      not_dba_flash
+    end
   end
-end
 
   # PUT /customers/1
   # PUT /customers/1.json

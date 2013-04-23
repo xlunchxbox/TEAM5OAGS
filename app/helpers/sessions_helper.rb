@@ -86,5 +86,6 @@ module SessionsHelper
     flash[:error] = "You must be a DBA to do this!"
     redirect_to root_path
   end
+
   
 end
