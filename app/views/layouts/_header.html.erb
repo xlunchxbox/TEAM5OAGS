@@ -14,9 +14,9 @@
               Create Accounts <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to "Create Customer", '#' %></li>
-              <li><%= link_to "Create Employee", '#'%></li>
-			  <li><%= link_to "Create Artist", '#'%></li>
+              <li><%= link_to "Create Customer", new_customer_path %></li>
+              <li><%= link_to "Create Employee", new_employee_path %></li>
+			  <li><%= link_to "Create Artist", new_artist_path%></li>
               </ul>
 		  <% end %>
 		  
@@ -26,14 +26,14 @@
               View Reports <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to "Customer Report", '#' %></li>
-              <li><%= link_to "Artist Report", '#'%></li>
-			  <li><%= link_to "Customer Artist Preferences Report", '#'%></li>
-			  <li><%= link_to "Past Purchase Report", '#'%></li>
-			  <li><%= link_to "Past Purchase Artowrk Location Report", '#'%></li>
-			  <li><%= link_to "Artist & Works Report", '#'%></li>
-			  <li><%= link_to "Speed of Sale Report", '#'%></li>
-			  <li><%= link_to "Current Inventory Report", '#'%></li>
+              <li><%= link_to "Customer Report", '/customers' %></li>
+              <li><%= link_to "Artist Report", '/artists'%></li>
+			  <li><%= link_to "Customer Artist Preferences Report", reports_input_customer_artist_preference_path %></li>
+			  <li><%= link_to "Past Purchase Report", reports_input_past_purchase_path %></li>
+			  <li><%= link_to "Past Purchase Artowrk Location Report", reports_input_past_purchase_location_path %></li>
+			  <li><%= link_to "Artist & Works Report", reports_input_artist_works_path %></li>
+			  <li><%= link_to "Speed of Sale Report", reports_input_speed_sale_path %></li>
+			  <li><%= link_to "Current Inventory Report", '/works'%></li>
               </ul>
 		  <% end %>
 		  
@@ -43,11 +43,11 @@
               View Reports <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to "Customer Report", '#' %></li>
-              <li><%= link_to "Artist Report", '#'%></li>
-			  <li><%= link_to "Customer Artist Preferences Report", '#'%></li>
-			  <li><%= link_to "Past Purchase Report", '#'%></li>
-			  <li><%= link_to "Past Purchase Artowrk Location Report", '#'%></li>
+              <li><%= link_to "Customer Report", '/customers' %></li>
+              <li><%= link_to "Artist Report", '/artists'%></li>
+			  <li><%= link_to "Customer Artist Preferences Report", reports_input_customer_artist_preference_path%></li>
+			  <li><%= link_to "Past Purchase Report", reports_input_past_purchase_path%></li>
+			  <li><%= link_to "Past Purchase Artowrk Location Report", reports_input_past_purchase_location_path%></li>
               </ul>
 		  <% end %>
 		  
@@ -57,8 +57,8 @@
               View Reports <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to "Request Artist & Works Report", '#' %></li>
-              <li><%= link_to "Request Current Inventory Report", '#'%></li>
+              <li><%= link_to "Artist & Works Report", reports_input_artist_works_path %></li>
+              <li><%= link_to "Current Inventory Report", '/works'%></li>
               </ul>
 		  <% end %>
 		  
