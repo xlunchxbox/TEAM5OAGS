@@ -1,5 +1,10 @@
 <h1>Listing users</h1>
 
+<% if signed_in? %>
+
+
+
+
 <table class = "table table-bordered table-striped">
   <tr>
     <th>First name</th>
@@ -45,5 +50,7 @@
 </table>
 
 <br />
+
+<% end %>
 
 <%= link_to 'New User', new_user_path %>

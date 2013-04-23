@@ -23,7 +23,7 @@ class CustomersController < ApplicationController
   # GET /customers/1
   # GET /customers/1.json
   def show
-    if signed_in? && is_owner? || is_employee?
+    if signed_in? && is_customer?#is_owner? || is_employee?
       @customer = Customer.find(params[:id])
 
       respond_to do |format|
