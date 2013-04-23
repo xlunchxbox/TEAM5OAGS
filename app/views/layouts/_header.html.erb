@@ -73,7 +73,26 @@
           	Account <b class="caret"></b>
 		</a>
         <ul class="dropdown-menu">
-          <li><%= link_to "Settings", current_user %></li>
+        
+			<% if is_owner? %>
+				<li><%= link_to "Edit Account", 			edit_owner_path(current_user) %></li>
+			<% end %>
+		
+			<% if is_employee? %>
+				<li><%= link_to "Edit Account", 			edit_employee_path(current_user) %></li>
+			<% end %>
+		
+			<% if is_artist? %>
+				<li><%= link_to "Edit Account", 			edit_artist_path(current_user) %></li>
+			<% end %>	
+			
+			<% if is_customer? %>
+				<li><%= link_to "Edit Account", 			edit_customer_path(current_user) %></li>
+			<% end %>
+		
+			<% if is_dba? %>
+				<li><%= link_to "Edit Account", 			edit_dba_path(current_user) %></li>
+			<% end %>
 
           <li class="divider"></li>
         <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
