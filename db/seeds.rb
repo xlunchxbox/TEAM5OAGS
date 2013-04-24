@@ -10,6 +10,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Owner.create!(username: 'team5', password: 'password', password_confirmation: 'password', email: 'team5@awesome.com')
+
+Employee.create!(username: 'employee', password: 'password', password_confirmation: 'password', email: 'employee@awesome.com')
+
+Dba.create!(username: 'dba', password: 'password', password_confirmation: 'password', email: 'dba@awesome.com')
 
 # Customer Seed
 Customer.create!(id: 1000,username: 'janes', last_name: 'Janes', first_name: 'Jeffrey',street: '123 W. Elm St', city: 'Renton', state: 'WA',zip: '98055',country: 'USA',area_code: '425',phone_number: '543-2345', email: 'Jeffrey.James@somewhere.com', password: "password", password_confirmation: "password") do |f|

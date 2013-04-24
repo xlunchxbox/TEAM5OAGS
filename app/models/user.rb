@@ -56,7 +56,7 @@ class User < ActiveRecord::Base
   validates :area_code, presence: true, length: {minimum: 3, maximum: 3}
   validates :state, presence: true, length: {minimum: 1, maximum: 15}
   validates :street, presence: true, length: {minimum: 2, maximum: 50}
-  validates :phone_number, presence: true, length: {minimum: 7, maximum: 7}
+  validates :phone_number, presence: true, length: {minimum: 7, maximum: 8}
   validates :zip, presence: true, length: {minimum: 4, maximum: 5}
   
   private
