@@ -1,3 +1,4 @@
+
 <h1>Customers List</h1>
 
 <table class = "table table-bordered table-striped">
@@ -12,9 +13,13 @@
   	<th>Zip</th>
   	<th>Country</th>
   	<th>Phone Number</th>
-	<th>Show</th>
-	<th>Edit</th>
-	<th>Destroy</th>
+	
+	
+	<%if is_dba?%>
+		<th>Show</th>
+		<th>Edit</th>
+		<th>Destroy</th>
+	<% end %>
 
   </tr>
 
@@ -30,10 +35,11 @@
   	<td><%= customer.zip %></td>  
   	<td><%= customer.country %></td>  
   	<td>(<%= customer.area_code %>) <%= customer.phone_number %></td>
-	
-    <td><%= link_to 'Show', customer %></td>
-    <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-    <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<%if is_dba?%>
+	    <td><%= link_to 'Show', customer %></td>
+	    <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+	    <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		<% end %>
   </tr>
 <% end %>
 </table>

@@ -1,3 +1,5 @@
+
+
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
@@ -30,10 +32,10 @@
               <li><%= link_to "Artist Report", '/artists'%></li>
 			  <li><%= link_to "Customer Artist Preferences Report", reports_input_customer_artist_preference_path %></li>
 			  <li><%= link_to "Past Purchase Report", reports_input_past_purchase_path %></li>
-			  <li><%= link_to "Past Purchase Artowrk Location Report", reports_input_past_purchase_location_path %></li>
 			  <li><%= link_to "Artist & Works Report", reports_input_artist_works_path %></li>
 			  <li><%= link_to "Speed of Sale Report", reports_input_speed_sale_path %></li>
-			  <li><%= link_to "Current Inventory Report", '/works'%></li>
+			  <li><%= link_to "Purchase New Art", '/works/new' %></li>
+			  <li><%= link_to "Repurchase Artwork From Customer", '/works' %></li>
               </ul>
 		  <% end %>
 		  
@@ -48,6 +50,7 @@
 			  <li><%= link_to "Customer Artist Preferences Report", reports_input_customer_artist_preference_path%></li>
 			  <li><%= link_to "Past Purchase Report", reports_input_past_purchase_path%></li>
 			  <li><%= link_to "Past Purchase Artowrk Location Report", reports_input_past_purchase_location_path%></li>
+			  <li><%= link_to "Repurchase Artwork From Customer", '/works' %></li>
               </ul>
 		  <% end %>
 		  
@@ -62,7 +65,15 @@
               </ul>
 		  <% end %>
 		  
-		  
+		  <% if is_artist? %>
+          <li id="fat-menu" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              View Reports <b class="caret"></b>
+            </a>
+			<ul class="dropdown-menu">
+			<li><%= link_to "Current Inventory Report", '/works'%></li>
+			</ul>
+		  <% end %>
 		  
 		  
       <% if signed_in? %>
@@ -71,7 +82,26 @@
           	Account <b class="caret"></b>
 		</a>
         <ul class="dropdown-menu">
-          <li><%= link_to "Settings", current_user %></li>
+        
+			<% if is_owner? %>
+				<li><%= link_to "Edit Account", 			edit_owner_path(current_user) %></li>
+			<% end %>
+		
+			<% if is_employee? %>
+				<li><%= link_to "Edit Account", 			edit_employee_path(current_user) %></li>
+			<% end %>
+		
+			<% if is_artist? %>
+				<li><%= link_to "Edit Account", 			edit_artist_path(current_user) %></li>
+			<% end %>	
+			
+			<% if is_customer? %>
+				<li><%= link_to "Edit Account", 			edit_customer_path(current_user) %></li>
+			<% end %>
+		
+			<% if is_dba? %>
+				<li><%= link_to "Edit Account", 			edit_dba_path(current_user) %></li>
+			<% end %>
 
           <li class="divider"></li>
         <li><%= link_to "Sign out", signout_path, method: "delete" %></li>

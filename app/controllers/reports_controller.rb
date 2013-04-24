@@ -1,6 +1,6 @@
 # All controllers on this page are generated using scaffolding
 #in accordance with REST and MVC 
-#Created By: Gabe Ohlson, Joel Loucks
+#Created By: Gabe Ohlson, Joel Loucks, Chris Berkowitz
 #Database user checks: Joel Loucks & Gabe Ohlson
 #Date Approved: 4/22/2013 by Chris Cruz & Muhammad Naviwala
 
@@ -13,6 +13,7 @@ class ReportsController < ApplicationController
 
   def past_purchase
     @transaction = Transaction.where(params[:customer_id])
+    @customer = Customer.find(params[:customer_id])
   end
 
   def past_purchase_artwork_location

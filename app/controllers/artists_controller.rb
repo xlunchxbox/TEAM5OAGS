@@ -53,7 +53,7 @@ class ArtistsController < ApplicationController
 
   # GET /artists/1/edit
   def edit
-    if signed_in? && is_dba? 
+    if signed_in? && (is_dba? || is_artist?)
       @artist = Artist.find(params[:id])
     else
       not_correct_user
@@ -83,7 +83,7 @@ class ArtistsController < ApplicationController
   # PUT /artists/1
   # PUT /artists/1.json
   def update
-    if signed_in? && is_dba?
+    if signed_in? && (is_dba? || is_artist?)
       @artist = Artist.find(params[:id])
 
       respond_to do |format|
