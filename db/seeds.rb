@@ -271,11 +271,11 @@ Employee.create!(username: 'employee', last_name: "Lee", first_name: "Ryan", str
 
 Dba.create!(username: 'dba', last_name: "Ohlson", first_name: "Gabe", street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA', area_code: '713', phone_number: '832-2810', password: 'password', password_confirmation: 'password', email: 'dba@awesome.com')
 
-Testimonial.create!(testimonial_content: "Did not like The Dance Artwork", customer_id: 1000)
+Testimonial.create!(content: "Did not like The Dance Artwork", customer_id: 1000)
 
-Testimonial.create!(testimonial_content: "I am very pleased with Kandinsky", customer_id: 1015)
+Testimonial.create!(content: "I am very pleased with Kandinsky", customer_id: 1015)
 
-Testimonial.create!(testimonial_content: "I like the reports provided", customer_id: 1051)
+Testimonial.create!(content: "I like the reports provided", customer_id: 1051)
 
 
 
