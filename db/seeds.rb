@@ -12,6 +12,7 @@
 
 
 # Seed touples for Artist table
+=begin
 Artist.create!(id: 1,username: 'Miro', last_name: 'Miro',first_name: 'Joan', email: 'Joan.Miro@somewhere.com', country: 'Spanish',date_deceased: 1893, date_of_birth: 1983, password: "password", password_confirmation: "password",area_code: '713', phone_number: '123-1234', street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA') do |f|
 	f.id = 1
 end
@@ -39,7 +40,7 @@ end
 Artist.create!(id: 19,username: 'Graves',last_name: 'Graves',first_name: 'Morris', email: 'Morris@somewhere.com', country: 'United States',date_deceased: 1920,date_of_birth: 2001, password: "password", password_confirmation: "password",area_code: '713', phone_number: '123-1234', street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA') do |f|
 	f.id =19
 end
-
+=end
 
 
 # Customer Seed
