@@ -8,13 +8,18 @@
     <th>Medium</th>
     <th>Description</th>
     <th>Copy</th>
-    <th>Acquisition price</th>
-    <th>Asking price</th>
-    <th>Date acquired</th>
-    <th>Date sold</th>
-    <th>Img url</th>
 	
 	<% if is_employee? || is_owner? %>
+		<th>Acquisition price</th>
+	<% end %>
+    <th>Asking price</th>
+    <th>Date acquired</th>
+	
+    
+	
+	<% if is_employee? || is_owner? %>
+    <th>Date sold</th>
+    <th>Img url</th>
 	    <th>Show</th>
 	    <th>Edit</th>
 	    <th>Destroy</th>
@@ -30,11 +35,15 @@
     <td><%= work.description %></td>
     <td><%= work.copy %></td>
     <td><%= work.acquisition_price %></td>
-    <td><%= work.asking_price %></td>
-    <td><%= work.date_acquired %></td>
-    <td><%= work.date_sold %></td>
-    <td><%= work.img_url %></td>
+
 	<% if is_employee? || is_owner? %>
+		<td><%= work.asking_price %></td>
+	<% end %>
+    <td><%= work.date_acquired %></td>
+	
+	<% if is_employee? || is_owner? %>
+    	<td><%= work.date_sold %></td>
+		<td><%= work.img_url %></td>
 	    <td><%= link_to 'Show', work %></td>
 	    <td><%= link_to 'Edit', edit_work_path(work) %></td>
 	    <td><%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %></td>
