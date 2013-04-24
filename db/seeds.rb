@@ -182,9 +182,7 @@ end
 Work.create!(id: 596,title: 'Surf and Bird',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '366/500',artist_id: 800,date_acquired: '10/27/2010',acquisition_price: 250.00,asking_price: 500.00) do |f|
 	f.id = 596
 end
-Work.create!(id: 126,title: 'The Woven World',medium: 'Color lithograph',description:'Signed',copy: '17/750',artist_id: 800, date_acquired:  '11/21/2008',acquisition_price: 200.00,asking_price: 400.00, date_sold:'12/18/2009') do |f|
-	f.id = 126
-end
+
 Work.create!(id: 106, title: 'Memories IV', medium: 'Casein rice paper collage',description: '31 x 24.8 in.',copy: 'Unique',artist_id: 900,date_acquired: '09/29/2009',acquisition_price: 40000.00,asking_price: 75000.00) do |f|
 	f.id = 106
 end
