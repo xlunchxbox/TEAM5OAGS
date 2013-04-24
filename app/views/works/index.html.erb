@@ -17,7 +17,7 @@
 	
     
 	
-	<% if is_employee? || is_owner? %>
+	<% if is_owner? %>
     <th>Date sold</th>
     <th>Img url</th>
 	    <th>Show</th>
@@ -41,7 +41,7 @@
 	<% end %>
     <td><%= work.date_acquired %></td>
 	
-	<% if is_employee? || is_owner? %>
+	<% if is_owner? %>
     	<td><%= work.date_sold %></td>
 		<td><%= work.img_url %></td>
 	    <td><%= link_to 'Show', work %></td>
