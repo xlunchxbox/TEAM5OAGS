@@ -80,115 +80,115 @@ end
 
 
 # Works Seed
-Work.create!(id: 500,title: 'Memories IV', medium: 'Casein rice paper collage',description: '31 x 24.8 in.',copy: 'Unique', date_acquired: '11/04/2007', acquisition_price: 30000.00,asking_price: 45000.00,date_sold: '12/14/2007', artist_id: 18) do |f|
+Work.create!(id: 500,title: 'Memories IV', medium: 'Casein rice paper collage',description: '31 x 24.8 in.',copy: 'Unique', date_acquired: '11/04/2007', acquisition_price: 30000.00,asking_price: 45000.00,date_sold: '12/14/2007', artist_id: 900) do |f|
 f.id = 500
 end
-Work.create!(id: 511,title: 'Surf and Bird',medium: 'High Quality Limited Print',description:'Northwest School Expressionist style',copy: '142/500',artist_id: 19,date_acquired: '11/07/2007',acquisition_price: 250.00,asking_price: 500.00,date_sold:'12/19/2007',) do |f|
+Work.create!(id: 511,title: 'Surf and Bird',medium: 'High Quality Limited Print',description:'Northwest School Expressionist style',copy: '142/500',artist_id: 950,date_acquired: '11/07/2007',acquisition_price: 250.00,asking_price: 500.00,date_sold:'12/19/2007',) do |f|
 	f.id = 511
 end
-Work.create!(id: 521,title: 'The Tilted Field',medium: 'High Quality Limited Print',description:'Early Surrealist style',copy: '788/1000',artist_id: 1,date_acquired: '11/17/2007',acquisition_price: 125.00,asking_price: 250.00,date_sold:'01/18/2008',) do |f|
+Work.create!(id: 521,title: 'The Tilted Field',medium: 'High Quality Limited Print',description:'Early Surrealist style',copy: '788/1000',artist_id: 200,date_acquired: '11/17/2007',acquisition_price: 125.00,asking_price: 250.00,date_sold:'01/18/2008',) do |f|
 	f.id = 521
 end
-Work.create!(id: 522,title: 'La Lacon de Ski',medium: 'High Quality Limited Print',description:'Surrealist style',copy: '363/500',artist_id: 1,date_acquired: '11/17/2007',acquisition_price: 250.00,asking_price: 500.00,date_sold:'12/12/2008') do |f|
+Work.create!(id: 522,title: 'La Lacon de Ski',medium: 'High Quality Limited Print',description:'Surrealist style',copy: '363/500',artist_id: 200,date_acquired: '11/17/2007',acquisition_price: 250.00,asking_price: 500.00,date_sold:'12/12/2008') do |f|
 	f.id = 522
 end
-Work.create!(id: 523,title: 'On White II',medium: 'High Quality Limited Print',description:'Bauhaus style of Kandisnky',copy: '435/500',artist_id: 2,date_acquired: '11/17/2007',acquisition_price: 250.00,asking_price: 250.00,date_sold:'01/18/2008') do |f|
+Work.create!(id: 523,title: 'On White II',medium: 'High Quality Limited Print',description:'Bauhaus style of Kandisnky',copy: '435/500',artist_id: 300,date_acquired: '11/17/2007',acquisition_price: 250.00,asking_price: 250.00,date_sold:'01/18/2008') do |f|
 	f.id = 523
 end
-Work.create!(id: 524,title: 'Woman with a Hat',medium: 'High Quality Limited Print',description:'A very colorful impressionist piece',copy: '596/750',artist_id: 4,date_acquired: '11/17/2007',acquisition_price: 200.00,asking_price: 500.00,date_sold:'12/12/2008') do |f|
+Work.create!(id: 524,title: 'Woman with a Hat',medium: 'High Quality Limited Print',description:'A very colorful impressionist piece',copy: '596/750',artist_id: 500,date_acquired: '11/17/2007',acquisition_price: 200.00,asking_price: 500.00,date_sold:'12/12/2008') do |f|
 	f.id = 524
 end
-Work.create!(id: 537,title: 'The Woven World',medium: 'Color lithograph',description:'Signed',copy: '17/750',artist_id: 17,date_acquired: '03/03/2008',acquisition_price: 1500.00,asking_price: 3000.00,date_sold:'06/07/2008') do |f|
+Work.create!(id: 537,title: 'The Woven World',medium: 'Color lithograph',description:'Signed',copy: '17/750',artist_id: 800,date_acquired: '03/03/2008',acquisition_price: 1500.00,asking_price: 3000.00,date_sold:'06/07/2008') do |f|
 	f.id = 537
 end
-Work.create!(id: 548,title: 'Night Bird',medium: 'Watercolor on Paper',description:'50 x 72.5 cm -- Signed',copy: 'Unique',artist_id: 19,date_acquired: '09/21/2008',acquisition_price: 15000.00,asking_price: 30000.00, date_sold:'11/28/2008') do |f|
+Work.create!(id: 548,title: 'Night Bird',medium: 'Watercolor on Paper',description:'50 x 72.5 cm -- Signed',copy: 'Unique',artist_id: 950,date_acquired: '09/21/2008',acquisition_price: 15000.00,asking_price: 30000.00, date_sold:'11/28/2008') do |f|
 	f.id = 548
 end
-Work.create!(id: 551,title: 'Der Blaue Relter',medium: 'High Quality Limited Print',description:'"The Blue Rider" -- Early pointillism influence',copy: '236/1000',artist_id: 2,date_acquired: '11/21/2008',acquisition_price: 125.00,asking_price: 250.00,date_sold: '12/18/2008') do |f|
+Work.create!(id: 551,title: 'Der Blaue Relter',medium: 'High Quality Limited Print',description:'"The Blue Rider" -- Early pointillism influence',copy: '236/1000',artist_id: 300,date_acquired: '11/21/2008',acquisition_price: 125.00,asking_price: 250.00,date_sold: '12/18/2008') do |f|
 	f.id = 551
 end
-Work.create!(id: 552,title: 'Angelus Novus',medium: 'High Quality Limited Print',description:'Bauhaus style of Klee',copy: '659/750',artist_id: 3, date_acquired: Time.now, acquisition_price: 1000, asking_price: 2000) do |f|
+Work.create!(id: 552,title: 'Angelus Novus',medium: 'High Quality Limited Print',description:'Bauhaus style of Klee',copy: '659/750',artist_id: 400, date_acquired: Time.now, acquisition_price: 1000, asking_price: 2000) do |f|
 	f.id = 552
 end
-Work.create!(id: 553,title: 'The Dance',medium: 'High Quality Limited Print',description:'An Impressionist masterpiece',copy: '734/1000',artist_id: 4,date_acquired: '11/21/2008',acquisition_price: 125.00,asking_price: 500.00,date_sold: '12/22/2008') do |f|
+Work.create!(id: 553,title: 'The Dance',medium: 'High Quality Limited Print',description:'An Impressionist masterpiece',copy: '734/1000',artist_id: 500,date_acquired: '11/21/2008',acquisition_price: 125.00,asking_price: 500.00,date_sold: '12/22/2008') do |f|
 	f.id = 553
 end
-Work.create!(id: 554,title: 'I and the Village',medium: 'High Quality Limited Print',description:'Shows Belarusian folk-life themes and symbology',copy: '834/1000',artist_id: 5,date_acquired: '11/21/2008',acquisition_price: 125.00,asking_price: 250.00, date_sold:'03/18/2009') do |f|
+Work.create!(id: 554,title: 'I and the Village',medium: 'High Quality Limited Print',description:'Shows Belarusian folk-life themes and symbology',copy: '834/1000',artist_id: 600,date_acquired: '11/21/2008',acquisition_price: 125.00,asking_price: 250.00, date_sold:'03/18/2009') do |f|
 	f.id = 554
 end
-Work.create!(id: 555,title: 'Claude Monet Painting',medium: 'High Quality Limited Print',description:'Shows French Impressionist influence of Monet',copy: '684/1000',artist_id: 11,date_acquired: '11/21/2008',acquisition_price: 125.00,asking_price: 250.00, date_sold:'03/16/2009') do |f|
+Work.create!(id: 555,title: 'Claude Monet Painting',medium: 'High Quality Limited Print',description:'Shows French Impressionist influence of Monet',copy: '684/1000',artist_id: 650,date_acquired: '11/21/2008',acquisition_price: 125.00,asking_price: 250.00, date_sold:'03/16/2009') do |f|
 	f.id = 555
 end
-Work.create!(id: 561,title: 'Sunflower',medium: 'Watercolor and ink',description:'33.3 x 16.1 cm -- Signed',copy: 'Unique',artist_id: 19,date_acquired: '05/07/2009',acquisition_price: 10000.00,asking_price: 20000.00, date_sold:'06/28/2009') do |f|
+Work.create!(id: 561,title: 'Sunflower',medium: 'Watercolor and ink',description:'33.3 x 16.1 cm -- Signed',copy: 'Unique',artist_id: 950,date_acquired: '05/07/2009',acquisition_price: 10000.00,asking_price: 20000.00, date_sold:'06/28/2009') do |f|
 	f.id = 561
 end
-Work.create!(id: 562,title: 'The Fiddler',medium: 'High Quality Limited Print',description:'Shows Belarusian folk-life themese and symbology',copy: '251/1000',artist_id: 5,date_acquired: '05/18/2009',acquisition_price: 125.00,asking_price: 250.00,date_sold: '08/15/2009') do |f|
+Work.create!(id: 562,title: 'The Fiddler',medium: 'High Quality Limited Print',description:'Shows Belarusian folk-life themese and symbology',copy: '251/1000',artist_id: 600,date_acquired: '05/18/2009',acquisition_price: 125.00,asking_price: 250.00,date_sold: '08/15/2009') do |f|
 	f.id = 562
 end
-Work.create!(id: 563,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American realist style -- From work in Spain',copy: '583/750',artist_id: 11,date_acquired: '05/18/2009',acquisition_price: 200.00,asking_price: 400.00,date_sold: '08/15/2009') do |f|
+Work.create!(id: 563,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American realist style -- From work in Spain',copy: '583/750',artist_id: 650,date_acquired: '05/18/2009',acquisition_price: 200.00,asking_price: 400.00,date_sold: '08/15/2009') do |f|
 	f.id = 563
 end
-Work.create!(id: 564,title: 'Frarmers Market #2',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist style',copy: '267/500',artist_id: 17,date_acquired: '05/18/2009',acquisition_price: 250.00,asking_price: 500.00,date_sold: '09/28/2009') do |f|
+Work.create!(id: 564,title: 'Frarmers Market #2',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist style',copy: '267/500',artist_id: 800,date_acquired: '05/18/2009',acquisition_price: 250.00,asking_price: 500.00,date_sold: '09/28/2009') do |f|
 	f.id = 564
 end
-Work.create!(id: 565,title: 'Frarmers Market #2',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist style',copy: '268/500',artist_id: 17,date_acquired:  '05/18/2009',acquisition_price: 250.00,asking_price: 500.00) do |f|
+Work.create!(id: 565,title: 'Frarmers Market #2',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist style',copy: '268/500',artist_id: 800,date_acquired:  '05/18/2009',acquisition_price: 250.00,asking_price: 500.00) do |f|
 	f.id = 565
 end
-Work.create!(id: 566,title: 'Into Time',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist style',copy: '323/500',artist_id: 18,date_acquired: '05/18/2009',acquisition_price: 250.00,asking_price: 500.00,date_sold: '09/27/2009') do |f|
+Work.create!(id: 566,title: 'Into Time',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist style',copy: '323/500',artist_id: 900,date_acquired: '05/18/2009',acquisition_price: 250.00,asking_price: 500.00,date_sold: '09/27/2009') do |f|
 	f.id = 566
 end
-Work.create!(id: 570,title: 'Untitled Number 1',medium: 'Monotype with tempera',description:'4.3 x 6.1 in --Signed',copy: 'Unique',artist_id: 17,date_acquired: '06/28/2009',acquisition_price: 7500.00,asking_price: 15000.00,date_sold: '09/29/2009') do |f|
+Work.create!(id: 570,title: 'Untitled Number 1',medium: 'Monotype with tempera',description:'4.3 x 6.1 in --Signed',copy: 'Unique',artist_id: 800,date_acquired: '06/28/2009',acquisition_price: 7500.00,asking_price: 15000.00,date_sold: '09/29/2009') do |f|
 	f.id = 570
 end
-Work.create!(id: 571,title: 'Yellow covers blue',medium: 'Oil and collage',description:'71 x 78 in --Signed',copy: 'Unique',artist_id: 18,date_acquired: '08/23/2009',acquisition_price: 35000.00,asking_price: 60000.00, date_sold:'09/29/2009') do |f|
+Work.create!(id: 571,title: 'Yellow covers blue',medium: 'Oil and collage',description:'71 x 78 in --Signed',copy: 'Unique',artist_id: 900,date_acquired: '08/23/2009',acquisition_price: 35000.00,asking_price: 60000.00, date_sold:'09/29/2009') do |f|
 	f.id = 571
 end
-Work.create!(id: 578,title: 'Mid Century Hibernation',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist style',copy: '362/500',artist_id: 19,date_acquired: '10/11/2009',acquisition_price: 250.00,asking_price: 500.00) do |f|
+Work.create!(id: 578,title: 'Mid Century Hibernation',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist style',copy: '362/500',artist_id: 950,date_acquired: '10/11/2009',acquisition_price: 250.00,asking_price: 500.00) do |f|
 	f.id = 578
 end
-Work.create!(id: 580,title: 'Forms in Progress I',medium: 'Color aquatint',description:'19.3 x 24.4 in --Signed',copy: 'Unique',artist_id: 17,date_acquired: '02/28/2010',acquisition_price: 2000.00,asking_price: 3500.00,date_sold: '04/26/2010') do |f|
+Work.create!(id: 580,title: 'Forms in Progress I',medium: 'Color aquatint',description:'19.3 x 24.4 in --Signed',copy: 'Unique',artist_id: 700,date_acquired: '02/28/2010',acquisition_price: 2000.00,asking_price: 3500.00,date_sold: '04/26/2010') do |f|
 	f.id = 580
 end
-Work.create!(id: 581,title: 'Forms in Progress II',medium: 'Color aquatint',description:'19.3 x 24.4 in --Signed',copy: 'Unique',artist_id: 17,date_acquired: '02/28/2010',acquisition_price: 2000.00,asking_price: 3500.00,date_sold: '04/26/2010') do |f|
+Work.create!(id: 581,title: 'Forms in Progress II',medium: 'Color aquatint',description:'19.3 x 24.4 in --Signed',copy: 'Unique',artist_id: 700,date_acquired: '02/28/2010',acquisition_price: 2000.00,asking_price: 3500.00,date_sold: '04/26/2010') do |f|
 	f.id = 581
 end
-Work.create!(id: 585,title: 'The Fiddler',medium: 'High Quality Limited Print',description:'Shows Belarusian folk-life themes and symbology',copy: '252/1000',artist_id: 5,date_acquired: '06/08/2010',acquisition_price: 125.00,asking_price: 250.00, date_sold:'09/27/2010') do |f|
+Work.create!(id: 585,title: 'The Fiddler',medium: 'High Quality Limited Print',description:'Shows Belarusian folk-life themes and symbology',copy: '252/1000',artist_id: 600,date_acquired: '06/08/2010',acquisition_price: 125.00,asking_price: 250.00, date_sold:'09/27/2010') do |f|
 	f.id = 585 
 end
-Work.create!(id: 586,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American Realist style -- From work in Spain',copy: '588/750',artist_id: 11,date_acquired: '06/08/2010',acquisition_price: 200.00,asking_price: 400.00, date_sold:'09/27/2010') do |f|
+Work.create!(id: 586,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American Realist style -- From work in Spain',copy: '588/750',artist_id: 650,date_acquired: '06/08/2010',acquisition_price: 200.00,asking_price: 400.00, date_sold:'09/27/2010') do |f|
 	f.id = 586
 end
-Work.create!(id: 587,title: 'Broadway Boogie',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '433/500',artist_id: 17,date_acquired: Time.now, acquisition_price: 1000, asking_price: 2000) do |f|
+Work.create!(id: 587,title: 'Broadway Boogie',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '433/500',artist_id: 800,date_acquired: Time.now, acquisition_price: 1000, asking_price: 2000) do |f|
 	f.id = 587
 end
-Work.create!(id: 588,title: 'Universal Field',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '114/500',artist_id: 17, date_acquired: '06/08/2010',acquisition_price: 250.00,asking_price: 500.00) do |f|
+Work.create!(id: 588,title: 'Universal Field',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '114/500',artist_id: 800, date_acquired: '06/08/2010',acquisition_price: 250.00,asking_price: 500.00) do |f|
 	f.id = 588
 end
-Work.create!(id: 589,title: 'Color Floating in Time',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '487/500',artist_id: 18,date_acquired:  '06/08/2010',acquisition_price: 250.00,asking_price: 500.00)  do |f|
+Work.create!(id: 589,title: 'Color Floating in Time',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '487/500',artist_id: 900,date_acquired:  '06/08/2010',acquisition_price: 250.00,asking_price: 500.00)  do |f|
 	f.id = 589
 end
-Work.create!(id: 590,title: 'Blue Interior',medium: 'Tempera on card',description:'43.9 x 29.75 in -- Signed',copy: 'Unique',artist_id: 17,date_acquired: '08/29/2010',acquisition_price: 2500.00,asking_price: 5000.00,date_sold:'09/27/2010') do |f|
+Work.create!(id: 590,title: 'Blue Interior',medium: 'Tempera on card',description:'43.9 x 29.75 in -- Signed',copy: 'Unique',artist_id: 800,date_acquired: '08/29/2010',acquisition_price: 2500.00,asking_price: 5000.00,date_sold:'09/27/2010') do |f|
 	f.id = 590
 end
-Work.create!(id: 593,title: 'Surf and Bird',medium: 'Gouache',description:'26.5 x 29.75 in --Signed',copy: 'Unique',artist_id: 19,date_acquired: '10/25/2010',acquisition_price: 25000.00,asking_price: 50000.00) do |f|
+Work.create!(id: 593,title: 'Surf and Bird',medium: 'Gouache',description:'26.5 x 29.75 in --Signed',copy: 'Unique',artist_id: 950,date_acquired: '10/25/2010',acquisition_price: 25000.00,asking_price: 50000.00) do |f|
 	f.id = 593
 end
-Work.create!(id: 594,title: 'Surf and Bird',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '366/500',artist_id: 17,date_acquired: '10/27/2010',acquisition_price: 250.00,asking_price: 500.00) do |f|
+Work.create!(id: 594,title: 'Surf and Bird',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '366/500',artist_id: 800,date_acquired: '10/27/2010',acquisition_price: 250.00,asking_price: 500.00) do |f|
 	f.id = 594
 end
-Work.create!(id: 595,title: 'Surf and Bird',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '366/500',artist_id: 17,date_acquired: '10/27/2010',acquisition_price: 250.00,asking_price: 500.00) do |f|
+Work.create!(id: 595,title: 'Surf and Bird',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '366/500',artist_id: 800,date_acquired: '10/27/2010',acquisition_price: 250.00,asking_price: 500.00) do |f|
 	f.id = 595
 end
-Work.create!(id: 596,title: 'Surf and Bird',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '366/500',artist_id: 17,date_acquired: '10/27/2010',acquisition_price: 250.00,asking_price: 500.00) do |f|
+Work.create!(id: 596,title: 'Surf and Bird',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '366/500',artist_id: 800,date_acquired: '10/27/2010',acquisition_price: 250.00,asking_price: 500.00) do |f|
 	f.id = 596
 end
-Work.create!(id: 126,title: 'The Woven World',medium: 'Color lithograph',description:'Signed',copy: '17/750',artist_id: 17, date_acquired:  '11/21/2008',acquisition_price: 200.00,asking_price: 400.00, date_sold:'12/18/2009') do |f|
+Work.create!(id: 126,title: 'The Woven World',medium: 'Color lithograph',description:'Signed',copy: '17/750',artist_id: 800, date_acquired:  '11/21/2008',acquisition_price: 200.00,asking_price: 400.00, date_sold:'12/18/2009') do |f|
 	f.id = 126
 end
-Work.create!(id: 106, title: 'Memories IV', medium: 'Casein rice paper collage',description: '31 x 24.8 in.',copy: 'Unique',artist_id: 18,date_acquired: '09/29/2009',acquisition_price: 40000.00,asking_price: 75000.00) do |f|
+Work.create!(id: 106, title: 'Memories IV', medium: 'Casein rice paper collage',description: '31 x 24.8 in.',copy: 'Unique',artist_id: 900,date_acquired: '09/29/2009',acquisition_price: 40000.00,asking_price: 75000.00) do |f|
 	f.id = 106
 end
-Work.create!(id: 226,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American Realist style -- From work in Spain',copy: '588/750',artist_id: 11,date_acquired:  '06/08/2010',acquisition_price: 200.00,asking_price: 400.00) do |f|
+Work.create!(id: 226,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American Realist style -- From work in Spain',copy: '588/750',artist_id: 650,date_acquired:  '06/08/2010',acquisition_price: 200.00,asking_price: 400.00) do |f|
 	f.id = 226
 end
 
