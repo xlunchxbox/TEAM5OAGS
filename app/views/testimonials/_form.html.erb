@@ -12,11 +12,12 @@
       </ul>
     </div>
   <% end %>
-  <div class="row" >
+  <div class="row">
     <div class="span6 offset3">
-	  <div class="field">
+<div class="field" style="display: none;">
 		  <p>Customer</p><br />
 		  <%= f.collection_select :customer_id, Customer.find(:all), 			:id, :first_name, :selected => @current_user.id %> 
+		  
 	  </div>
 	  
 	  <div class="field">
