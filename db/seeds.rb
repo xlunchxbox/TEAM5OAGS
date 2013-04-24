@@ -258,7 +258,7 @@ end
 Transaction.create!(id: 201,sales_price: 3250.00,customer_id: 1040,work_id: 580) do |f|
 	f.id = 201
 end
-Transaction.create!(id: 202,sales_price: 3250.00,customer_id: 1040,customer_id: 1072, work_id: 581)  do |f|
+Transaction.create!(id: 202,sales_price: 3250.00,customer_id: 1040, work_id: 581)  do |f|
 	f.id = 202
 end
 Transaction.create!(id: 225,sales_price: 225.00,customer_id: 1051,work_id: 585)  do |f|
