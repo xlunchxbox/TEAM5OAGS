@@ -29,7 +29,7 @@ class SessionsController < ApplicationController
         # from 3 am to 12 pm
         welcomeString = "Good morning  #{user.type} ! Welcome to TEAM5OAGS. You are now logged in."
 		flash.keep[:notice] = welcomeString
-      else
+      elsif time.hour > 12 && time.hour < 17
         welcomeString = "Good afternoon  #{user.type} ! Welcome to TEAM5OAGS. You are now logged in."
 		flash.keep[:notice] = welcomeString
       end
