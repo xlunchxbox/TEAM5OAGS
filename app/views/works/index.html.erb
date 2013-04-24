@@ -13,14 +13,18 @@
     <th>Date acquired</th>
     <th>Date sold</th>
     <th>Img url</th>
-    <th>Show</th>
-    <th>Edit</th>
-    <th>Destroy</th>
+	
+	<% if is_employee? || is_owner? %>
+	    <th>Show</th>
+	    <th>Edit</th>
+	    <th>Destroy</th>
+	<% end %>
+	
   </tr>
 
 <% @works.each do |work| %>
   <tr>
-    <td><%= work.artist_id %></td>
+    <td><%= work.artist.first_name %> <%= work.artist.last_name %></td>
     <td><%= work.title %></td>
     <td><%= work.medium %></td>
     <td><%= work.description %></td>
@@ -30,9 +34,11 @@
     <td><%= work.date_acquired %></td>
     <td><%= work.date_sold %></td>
     <td><%= work.img_url %></td>
-    <td><%= link_to 'Show', work %></td>
-    <td><%= link_to 'Edit', edit_work_path(work) %></td>
-    <td><%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<% if is_employee? || is_owner? %>
+	    <td><%= link_to 'Show', work %></td>
+	    <td><%= link_to 'Edit', edit_work_path(work) %></td>
+	    <td><%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<% end %>
   </tr>
 <% end %>
 </table>

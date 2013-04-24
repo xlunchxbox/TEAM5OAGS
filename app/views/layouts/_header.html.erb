@@ -64,7 +64,15 @@
               </ul>
 		  <% end %>
 		  
-		  
+		  <% if is_artist? %>
+          <li id="fat-menu" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              View Reports <b class="caret"></b>
+            </a>
+			<ul class="dropdown-menu">
+			<li><%= link_to "Current Inventory Report", '/works'%></li>
+			</ul>
+		  <% end %>
 		  
 		  
       <% if signed_in? %>
