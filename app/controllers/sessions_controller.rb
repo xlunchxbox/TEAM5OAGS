@@ -5,26 +5,49 @@
 #Date Approved: 4/22/2013 by Chris Cruz & Muhammad Naviwala
 
 class SessionsController < ApplicationController
-  
+
   def new
-    
+
   end
-  
+
   def create
     user = User.find_by_username(params[:session][:username].downcase)
     if user && user.authenticate(params[:session][:password])
       sign_in user
-      flash.keep[:notice] = 'Welcome to TEAM5OAGS. You are now logged in !!'
+      ###################################################################################
+      # Just to display good morning, good evening etc
+      time = Time.new
+      if time.hour > 17 && time.hour < 24
+        # from 5 pm to 12 am
+        flash.keep[:notice] = 'Good evening  '
+        flash.keep[:notice] << user.type
+        flash.keep[:notice] << ' ! Welcome to TEAM5OAGS. You are now logged in.'
+      elsif time.hour > 0 && time.hour < 3
+        # from 12 am to 3 am
+        flash.keep[:notice] = 'Good evening  '
+        flash.keep[:notice] = user.type
+        flash.keep[:notice] << ' ! Welcome to TEAM5OAGS. You are now logged in.'
+      elsif time.hour > 3 && time.hour < 12
+        # from 3 am to 12 pm
+        flash.keep[:notice] = 'Good morning  '
+        flash.keep[:notice] = user.type
+        flash.keep[:notice] << ' ! Welcome to TEAM5OAGS. You are now logged in.'
+      else
+        flash.keep[:notice] = 'Good afternoon  '
+        flash.keep[:notice] = user.type
+        flash.keep[:notice] << ' ! Welcome to TEAM5OAGS. You are now logged in.'
+      end
+      ###################################################################################
       redirect_back_or root_path
     else
       flash.now[:error] = 'Invalid email/password combination'
       render 'new'
     end
   end
-     
+
   def destroy
     sign_out
     redirect_to root_url
   end
-  
+
 end
