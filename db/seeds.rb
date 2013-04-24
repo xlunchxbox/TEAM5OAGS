@@ -10,12 +10,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Owner.create!(username: 'team5', password: 'password', password_confirmation: 'password', email: 'team5@awesome.com')
-
-Employee.create!(username: 'employee', password: 'password', password_confirmation: 'password', email: 'employee@awesome.com')
-
-Dba.create!(username: 'dba', password: 'password', password_confirmation: 'password', email: 'dba@awesome.com')
-
 # Customer Seed
 Customer.create!(id: 1000,username: 'janes', last_name: 'Janes', first_name: 'Jeffrey',street: '123 W. Elm St', city: 'Renton', state: 'WA',zip: '98055',country: 'USA',area_code: '425',phone_number: '543-2345', email: 'Jeffrey.James@somewhere.com', password: "password", password_confirmation: "password") do |f|
 f.id = 1000
@@ -32,7 +26,7 @@ end
 Customer.create!(id: 1034, username: 'Frederickson', last_name: 'Frederickson', first_name: 'Mary Beth',street: '125 South Lafayette', city: 'Denver', state: 'CO',zip: '80201',country: 'USA',area_code: '303',phone_number: '513-8822',email: 'MaryBeth.Frederickson@somewhere.com', password: "password", password_confirmation: "password") do |f|
 	f.id = 1034
 end
-Customer.create!(id: 1036, username: 'Waming', last_name: 'Waming', first_name:'Selma',street: '205 Burnaby', city: 'Vancouver', state: 'BC', zip: 'V6Z 1W2',country: 'Canada',area_code: '604',phone_number: '988-0512',email: 'Selma.Waming@somewhere.com', password: "password", password_confirmation: "password") do |f|
+Customer.create!(id: 1036, username: 'Waming', last_name: 'Waming', first_name:'Selma',street: '205 Burnaby', city: 'Vancouver', state: 'BC', zip: '12345',country: 'Canada',area_code: '604',phone_number: '988-0512',email: 'Selma.Waming@somewhere.com', password: "password", password_confirmation: "password") do |f|
 	f.id = 1036
 end
 Customer.create!(id: 1037,username: 'Wu', last_name: 'Wu',first_name: 'Susan',street: '105 Locust Ave', city: 'Atlanta', state: 'GA',zip: '30322',country: 'USA',area_code: '404',phone_number: '653-3465',email: 'Suan.Wu@somewhere.com', password: "password", password_confirmation: "password") do |f|
@@ -49,31 +43,31 @@ Customer.create!(id: 1051,username: 'Wilkens',last_name: 'Wilkens', first_name: 
 end
 
 # Seed touples for Artist table
-Artist.create!(id: 1,username: 'Miro', last_name: 'Miro',first_name: 'Joan', email: 'Joan.Miro@somewhere.com', country: 'Spanish',date_deceased: 1893, date_of_birth: 1983, password: "password", password_confirmation: "password") do |f|
+Artist.create!(id: 1,username: 'Miro', last_name: 'Miro',first_name: 'Joan', email: 'Joan.Miro@somewhere.com', country: 'Spanish',date_deceased: 1893, date_of_birth: 1983, password: "password", password_confirmation: "password",area_code: '713', phone_number: '123-1234', street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA') do |f|
 	f.id = 1
 end
-Artist.create!(id: 2,username: 'Kandisky',last_name: 'Kandisky',first_name: 'Wassily', email: 'Wassily.Kandisky@somewhere.com', country: 'Russian',date_deceased: 1866,date_of_birth: 1944, password: "password", password_confirmation: "password") do |f|
+Artist.create!(id: 2,username: 'Kandisky',last_name: 'Kandisky',first_name: 'Wassily', email: 'Wassily.Kandisky@somewhere.com', country: 'Russian',date_deceased: 1866,date_of_birth: 1944, password: "password", password_confirmation: "password",area_code: '713', phone_number: '123-1234', street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA') do |f|
 	f.id = 2
 end
-Artist.create!(id: 3,username: 'Klee',last_name: 'Klee',first_name: 'Paul', email: 'Paul.Klee@somewhere.com', country: 'German',date_deceased: 1879,date_of_birth: 1940, password: "password", password_confirmation: "password") do |f|
+Artist.create!(id: 3,username: 'Klee',last_name: 'Klee',first_name: 'Paul', email: 'Paul.Klee@somewhere.com', country: 'German',date_deceased: 1879,date_of_birth: 1940, password: "password", password_confirmation: "password",area_code: '713', phone_number: '123-1234', street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA') do |f|
 	f.id =3
 end
-Artist.create!(id: 4,username: 'Matisse',last_name: 'Matisse',first_name: 'Henri', email: 'Henri.Matisse@somewhere.com', country: 'French',date_deceased: 1869,date_of_birth: 1954, password: "password", password_confirmation: "password") do |f| 
+Artist.create!(id: 4,username: 'Matisse',last_name: 'Matisse',first_name: 'Henri', email: 'Henri.Matisse@somewhere.com', country: 'French',date_deceased: 1869,date_of_birth: 1954, password: "password", password_confirmation: "password",area_code: '713', phone_number: '123-1234', street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA') do |f| 
 	f.id =4
 end
-Artist.create!(id: 5,username: 'Chagall',last_name: 'Chagall',first_name: 'Marc', email: 'Marc.Chagall@somewhere.com', country: 'French',date_deceased: 1887,date_of_birth: 1985, password: "password", password_confirmation: "password") do |f|
+Artist.create!(id: 5,username: 'Chagall',last_name: 'Chagall',first_name: 'Marc', email: 'Marc.Chagall@somewhere.com', country: 'French',date_deceased: 1887,date_of_birth: 1985, password: "password", password_confirmation: "password",area_code: '713', phone_number: '123-1234', street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA') do |f|
 	f.id =5
 end
-Artist.create!(id: 11,username: 'Sargent',last_name: 'Sargent',first_name: 'John Singer', email: 'JohnSinger.Sargent@somewhere.com', country: 'United States',date_deceased: 1856,date_of_birth: 1925, password: "password", password_confirmation: "password") do |f|
+Artist.create!(id: 11,username: 'Sargent',last_name: 'Sargent',first_name: 'John Singer', email: 'JohnSinger.Sargent@somewhere.com', country: 'United States',date_deceased: 1856,date_of_birth: 1925, password: "password", password_confirmation: "password",area_code: '713', phone_number: '123-1234', street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA') do |f|
 	f.id = 11
 end
-Artist.create!(id: 17,username: 'Tobey',last_name: 'Tobey',first_name: 'Mark', email: 'Mark.Tobey@somewhere.com', country: 'United States',date_deceased: 1890,date_of_birth: 1976, password: "password", password_confirmation: "password") do |f|
+Artist.create!(id: 17,username: 'Tobey',last_name: 'Tobey',first_name: 'Mark', email: 'Mark.Tobey@somewhere.com', country: 'United States',date_deceased: 1890,date_of_birth: 1976, password: "password", password_confirmation: "password",area_code: '713', phone_number: '123-1234', street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA') do |f|
 	f.id =17
 end
-Artist.create!(id: 18,username: 'Horiuchi',last_name: 'Horiuchi',first_name: 'Paul', email: 'Paul.Horiuchi@somewhere.com', country: 'United States',date_deceased: 1906, date_of_birth: 1999, password: "password", password_confirmation: "password") do |f|
+Artist.create!(id: 18,username: 'Horiuchi',last_name: 'Horiuchi',first_name: 'Paul', email: 'Paul.Horiuchi@somewhere.com', country: 'United States',date_deceased: 1906, date_of_birth: 1999, password: "password", password_confirmation: "password",area_code: '713', phone_number: '123-1234', street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA') do |f|
 	f.id = 18
 end
-Artist.create!(id: 19,username: 'Graves',last_name: 'Graves',first_name: 'Morris', email: 'Morris@somewhere.com', country: 'United States',date_deceased: 1920,date_of_birth: 2001, password: "password", password_confirmation: "password") do |f|
+Artist.create!(id: 19,username: 'Graves',last_name: 'Graves',first_name: 'Morris', email: 'Morris@somewhere.com', country: 'United States',date_deceased: 1920,date_of_birth: 2001, password: "password", password_confirmation: "password",area_code: '713', phone_number: '123-1234', street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA') do |f|
 	f.id =19
 end
 
@@ -270,3 +264,16 @@ end
 Transaction.create!(id: 241,sales_price: 4750.00,customer_id: 1015,work_id: 590) do |f|
 f.id = 241
 end
+
+Owner.create!(username: 'team5', last_name: "Loucks", first_name: "Joel", street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA', area_code: '713', phone_number: '832-2810',password: 'password', password_confirmation: 'password', email: 'team5@awesome.com')
+
+Employee.create!(username: 'employee', last_name: "Lee", first_name: "Ryan", street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA', area_code: '713', phone_number: '832-2810', password: 'password', password_confirmation: 'password', email: 'employee@awesome.com')
+
+Dba.create!(username: 'dba', last_name: "Ohlson", first_name: "Gabe", street: "123 st.", city: "Houston", state: 'TX', zip: '77004', country: 'USA', area_code: '713', phone_number: '832-2810', password: 'password', password_confirmation: 'password', email: 'dba@awesome.com')
+
+
+
+
+
+
+
