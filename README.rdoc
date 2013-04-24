@@ -51,7 +51,9 @@ rails g migration add_username_uniqueness_index
 
 
 
-
+=================================================
+About TEAM5OAGS
+=================================================
 
 
 TEAM5OAGS is an art gallery website that was developed by a team of eight members for the Spring 2013 software engineering course at the University of Houston. This website has been designed and developed in accordance with the REST and MVC architecture patterns as well as software engineering principles. The team utilized Ruby on Rails and MySQL as the front-end and back-end technologies for the website, respectively.

@@ -19,23 +19,19 @@ class SessionsController < ApplicationController
       time = Time.new
       if time.hour > 17 && time.hour < 24
         # from 5 pm to 12 am
-        flash.keep[:notice] = 'Good evening  '
-        flash.keep[:notice] << user.type
-        flash.keep[:notice] << ' ! Welcome to TEAM5OAGS. You are now logged in.'
+		welcomeString = "Good evening  #{user.type} ! Welcome to TEAM5OAGS. You are now logged in."
+		flash.keep[:notice] = welcomeString
       elsif time.hour > 0 && time.hour < 3
         # from 12 am to 3 am
-        flash.keep[:notice] = 'Good evening  '
-        flash.keep[:notice] = user.type
-        flash.keep[:notice] << ' ! Welcome to TEAM5OAGS. You are now logged in.'
+        welcomeString = "Good evening  #{user.type} ! Welcome to TEAM5OAGS. You are now logged in."
+		flash.keep[:notice] = welcomeString
       elsif time.hour > 3 && time.hour < 12
         # from 3 am to 12 pm
-        flash.keep[:notice] = 'Good morning  '
-        flash.keep[:notice] = user.type
-        flash.keep[:notice] << ' ! Welcome to TEAM5OAGS. You are now logged in.'
+        welcomeString = "Good morning  #{user.type} ! Welcome to TEAM5OAGS. You are now logged in."
+		flash.keep[:notice] = welcomeString
       else
-        flash.keep[:notice] = 'Good afternoon  '
-        flash.keep[:notice] = user.type
-        flash.keep[:notice] << ' ! Welcome to TEAM5OAGS. You are now logged in.'
+        welcomeString = "Good afternoon  #{user.type} ! Welcome to TEAM5OAGS. You are now logged in."
+		flash.keep[:notice] = welcomeString
       end
       ###################################################################################
       redirect_back_or root_path
