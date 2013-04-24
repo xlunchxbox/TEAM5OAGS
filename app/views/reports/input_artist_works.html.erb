@@ -6,6 +6,7 @@
 		  <%= form_tag reports_artist_works_path, method: 'get' do %> 
 
 		  	<%= text_field_tag :name, params[:name], :placeholder => "Search by Artist Name ..." %>
+			<%# collection_select(@artist_id, :artist_id, Artist.all, :id, :first_name) %>
 
 		  	<%= submit_tag "Submit!", :name => nil, class: "btn btn-large btn-primary"  %>
 		  <% end %>
