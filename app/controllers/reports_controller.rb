@@ -7,17 +7,26 @@
 class ReportsController < ApplicationController
   
   def customer_artist_preference
-    @transactions = Transaction.where(params[:customer_id])
+    customer_id = params[:customer_id]
+    @transactions = Transaction.scoped
+    @transactions = @transactions.where(:customer_id => customer_id) if customer_id.present?
+    @customer = Customer.find(params[:customer_id])
+    #@transactions = Transaction.where(params[:customer_id])
     #@transactions = Transaction.find_by_customer_id(params[:id])
   end
 
   def past_purchase
-    @transaction = Transaction.where(params[:customer_id])
+    customer_id = params[:customer_id]
+    #@transaction = Transaction.where(params[:customer_id])
+    @transaction = Transaction.scoped
+    @transaction = @transaction.where(:customer_id => customer_id) if customer_id.present?
     @customer = Customer.find(params[:customer_id])
   end
 
   def past_purchase_artwork_location
-    @transactions = Transaction.where(params[:customer_id])
+    customer_id = params[:customer_id]
+    @transactions = Transaction.scoped
+    @transactions = @transactions.where(:customer_id => customer_id) if customer_id.present?
     @customer = Customer.find(params[:customer_id])
   end
 
