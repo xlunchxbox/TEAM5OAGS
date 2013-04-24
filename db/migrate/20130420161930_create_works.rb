@@ -9,7 +9,7 @@ class CreateWorks < ActiveRecord::Migration
       t.string :img_url
       t.float :acquisition_price, :null =>false
       t.float :asking_price
-      t.date :date_acquired, :null =>false
+      t.date :date_acquired
       t.date :date_sold
 
       t.timestamps

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130420174145) do
+ActiveRecord::Schema.define(:version => 20130423202941) do
 
   create_table "artists", :force => true do |t|
     t.date     "date_of_birth", :null => false
@@ -77,6 +77,8 @@ ActiveRecord::Schema.define(:version => 20130420174145) do
     t.string   "type"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.integer  "date_deceased"
+    t.integer  "date_of_birth"
   end
 
   add_index "users", ["username"], :name => "index_users_on_username", :unique => true
@@ -90,7 +92,7 @@ ActiveRecord::Schema.define(:version => 20130420174145) do
     t.string   "img_url"
     t.float    "acquisition_price", :null => false
     t.float    "asking_price"
-    t.date     "date_acquired",     :null => false
+    t.date     "date_acquired"
     t.date     "date_sold"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
