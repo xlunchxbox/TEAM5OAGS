@@ -22,11 +22,11 @@
 		<td><%= k.date_acquired %></td>
 		<td><%= k.date_sold %></td>
 		<td><%= k.asking_price%></td>
-		<!-- <%#if false%> -->
 		<td><% t = Transaction.find_by_work_id(k.id) %>			
-			<%= t.sales_price %>	
+			$<%= t.sales_price %>	
 		</td>
-		<!-- <%#end%> -->
+		<td>$<%= t.sales_price - k.acquisition_price %></td>
+		<td><%= distance_of_time_in_words(k.created_at.to_time, Time.now) %></td>
 	</tr>
 	<% end %>
 			</table>
