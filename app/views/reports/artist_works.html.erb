@@ -1,9 +1,10 @@
+	<h1><%= @artists.first.first_name.titleize %> <%= @artists.first.last_name.titleize %></h1>
 <div class="row" >
   <div class="span6 offset3">
   <div class="field">
 
 		<% unless @artists.blank?  %>
-		<h2><%= @artists.first.first_name.titleize %> <%= @artists.first.last_name.titleize %></h2>
+	
 			<table class = "table table-bordered table-striped">
 				<tr>
 					<th>Title</th>
