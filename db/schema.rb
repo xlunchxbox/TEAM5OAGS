@@ -14,8 +14,8 @@
 ActiveRecord::Schema.define(:version => 20130423202941) do
 
   create_table "artists", :force => true do |t|
-    t.date     "date_of_birth", :null => false
-    t.date     "date_deceased"
+    t.string   "date_of_birth", :null => false
+    t.string   "date_deceased"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(:version => 20130423202941) do
     t.integer  "zip"
     t.string   "state"
     t.integer  "area_code"
-    t.integer  "phone_number"
+    t.string   "phone_number"
     t.string   "country"
     t.string   "password_digest"
     t.string   "remember_token"
@@ -92,8 +92,8 @@ ActiveRecord::Schema.define(:version => 20130423202941) do
     t.string   "img_url"
     t.float    "acquisition_price", :null => false
     t.float    "asking_price"
-    t.date     "date_acquired"
-    t.date     "date_sold"
+    t.string   "date_acquired"
+    t.string   "date_sold"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
   end

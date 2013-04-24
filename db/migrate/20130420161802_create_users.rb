@@ -8,7 +8,7 @@ class CreateUsers < ActiveRecord::Migration
       t.integer :zip
       t.string :state
       t.integer :area_code
-      t.integer :phone_number
+      t.string :phone_number
       t.string :country
       t.string :password_digest
       t.string :remember_token
