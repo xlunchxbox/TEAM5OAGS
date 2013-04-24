@@ -19,6 +19,8 @@
 #  type            :string(255)
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  date_deceased   :integer
+#  date_of_birth   :integer
 #
 
 require 'test_helper'

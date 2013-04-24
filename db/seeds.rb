@@ -158,7 +158,7 @@ end
 Work.create!(id: 586,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American Realist style -- From work in Spain',copy: '588/750',artist_id: 650,date_acquired: '06/08/2010',acquisition_price: 200.00,asking_price: 400.00, date_sold:'09/27/2010') do |f|
 	f.id = 586
 end
-Work.create!(id: 587,title: 'Broadway Boogie',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '433/500',artist_id: 800,date_acquired: Time.now, acquisition_price: 1000, asking_price: 2000) do |f|
+Work.create!(id: 587,title: 'Broadway Boogie',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '433/500',artist_id: 800,date_acquired: '02/18/1982', acquisition_price: 1000, asking_price: 2000) do |f|
 	f.id = 587
 end
 Work.create!(id: 588,title: 'Universal Field',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '114/500',artist_id: 800, date_acquired: '06/08/2010',acquisition_price: 250.00,asking_price: 500.00) do |f|
