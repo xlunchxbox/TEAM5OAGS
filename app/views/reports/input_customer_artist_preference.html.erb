@@ -5,8 +5,9 @@
     <div class="span6 offset3">
 	  <div class="actions">
 		  <%= form_tag reports_customer_artist_preference_path, method: 'get' do %> 
-		  	<%= text_field_tag :customer_id, params[:customer_id], :placeholder => "Search by Customer ID" %>
-
+		  	<%# text_field_tag :customer_id, params[:customer_id], :placeholder => "Search by Customer ID" %>
+			<%= collection_select(@customer_id, :customer_id, Customer.all, :id, :id) %>
+			
 		  	<%= submit_tag "Submit!", :name => nil , class: "btn btn-large btn-primary" %>
 		  <% end %>
 		  
