@@ -16,7 +16,7 @@
     <div class="span6 offset3">
 	  <div class="field">
 		  <p>Customer</p><br />
-		  <%= f.collection_select :customer_id, Customer.find(:all), 			:id, :first_name, :prompt => "Please Select" %>  
+		  <%= f.collection_select :customer_id, Customer.find(:all), 			:id, :first_name, :selected => @current_user.id %> 
 	  </div>
 	  
 	  <div class="field">
