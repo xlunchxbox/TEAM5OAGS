@@ -7,7 +7,8 @@
     <h3><%= @work.title %></h3>
     <p>
       <b>Artist:</b>
-      I don't know yet.  To be determined.
+      <% a = Artist.find (@work.artist_id)%>
+	  <%= a.first_name %> <%= a.last_name %>
     </p>
     <p>
       <b>Medium:</b>
