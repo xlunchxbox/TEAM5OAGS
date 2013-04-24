@@ -13,6 +13,7 @@
 		<th>Asking Price</th>
 		<th>Sales Price</th>
 		<th>Profit</th>
+		<th>Speed Margin</th>
 	</tr>
 	<% @works.each do |k| %>
 	<tr>
@@ -21,6 +22,11 @@
 		<td><%= k.date_acquired %></td>
 		<td><%= k.date_sold %></td>
 		<td><%= k.asking_price%></td>
+		<!-- <%#if false%> -->
+		<td><% t = Transaction.find_by_work_id(k.id) %>			
+			<%= t.sales_price %>	
+		</td>
+		<!-- <%#end%> -->
 	</tr>
 	<% end %>
 			</table>
