@@ -16,12 +16,12 @@
     <div class="span6 offset3">
 	  <div class="field">
 		  <p>Customer</p>
-		<%= f.collection_select :customer_id, Customer.find(:all), 			:id, :first_name, :prompt => "Please Select" %>  
+		<%= f.collection_select :customer_id, Customer.find(:all), 			:id, :id, :prompt => "Please Select" %>  
 
-	  </div>
+	  </div> 
 	  <div class="field">
 		  <p>Work</p>
-	    <%= f.collection_select :work_id, Work.find(:all), 			:id, :title, :prompt => "Please Select" %>  
+	    <%= f.collection_select :work_id, Work.find(:all), 			:id, :id, :prompt => "Please Select" %>  
 	  </div>
 	  <div class="field">
 	    <%= f.label :sales_price %><br />
