@@ -13,12 +13,13 @@
 		  <% if is_dba? %>
           <li id="fat-menu" class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Create Accounts <b class="caret"></b>
+              Create Accounts/Reports <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to "Create Customer", new_customer_path %></li>
               <li><%= link_to "Create Employee", new_employee_path %></li>
 			  <li><%= link_to "Create Artist", new_artist_path%></li>
+			  <li><%= link_to "Transactions", '/transactions'%></li>
               </ul>
 		  <% end %>
 		  
