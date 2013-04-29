@@ -9,7 +9,7 @@ class ArtistsController < ApplicationController
   # GET /artists
   # GET /artists.json
   def index
-    if signed_in? && (is_owner? || is_employee?)
+    if signed_in? && (is_owner? || is_employee? || is_dba?)
       @artists = Artist.all
 
       respond_to do |format|
@@ -24,7 +24,7 @@ class ArtistsController < ApplicationController
   # GET /artists/1
   # GET /artists/1.json
   def show
-    if signed_in? && is_owner? || is_employee?
+    if signed_in? && (is_owner? || is_employee? || is_dba?)
       @artist = Artist.find(params[:id])
 
       respond_to do |format|
