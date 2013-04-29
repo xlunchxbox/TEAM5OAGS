@@ -116,7 +116,7 @@ end
 Work.create!(id: 554,title: 'I and the Village',medium: 'High Quality Limited Print',description:'Shows Belarusian folk-life themes and symbology',copy: '834/1000',artist_id: 600,date_acquired: '11/21/2008',acquisition_price: 125.00,asking_price: 250.00, date_sold:'03/18/2009') do |f|
 	f.id = 554
 end
-Work.create!(id: 555,title: 'Claude Monet Painting',medium: 'High Quality Limited Print',description:'Shows French Impressionist influence of Monet',copy: '684/1000',artist_id: 650,date_acquired: '11/21/2008',acquisition_price: 125.00,asking_price: 250.00, date_sold:'03/16/2009') do |f|
+Work.create!(id: 555,title: 'Claude Monet Painting',medium: 'High Quality Limited Print',description:'Shows French Impressionist influence of Monet',copy: '684/1000',artist_id: 600,date_acquired: '11/21/2008',acquisition_price: 125.00,asking_price: 250.00, date_sold:'03/16/2009') do |f|
 	f.id = 555
 end
 Work.create!(id: 561,title: 'Sunflower',medium: 'Watercolor and ink',description:'33.3 x 16.1 cm -- Signed',copy: 'Unique',artist_id: 950,date_acquired: '05/07/2009',acquisition_price: 10000.00,asking_price: 20000.00, date_sold:'06/28/2009') do |f|
@@ -125,7 +125,7 @@ end
 Work.create!(id: 562,title: 'The Fiddler',medium: 'High Quality Limited Print',description:'Shows Belarusian folk-life themese and symbology',copy: '251/1000',artist_id: 600,date_acquired: '05/18/2009',acquisition_price: 125.00,asking_price: 250.00,date_sold: '08/15/2009') do |f|
 	f.id = 562
 end
-Work.create!(id: 563,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American realist style -- From work in Spain',copy: '583/750',artist_id: 650,date_acquired: '05/18/2009',acquisition_price: 200.00,asking_price: 400.00,date_sold: '08/15/2009') do |f|
+Work.create!(id: 563,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American realist style -- From work in Spain',copy: '583/750',artist_id: 600,date_acquired: '05/18/2009',acquisition_price: 200.00,asking_price: 400.00,date_sold: '08/15/2009') do |f|
 	f.id = 563
 end
 Work.create!(id: 564,title: 'Frarmers Market #2',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist style',copy: '267/500',artist_id: 800,date_acquired: '05/18/2009',acquisition_price: 250.00,asking_price: 500.00,date_sold: '09/28/2009') do |f|
@@ -143,7 +143,7 @@ end
 Work.create!(id: 571,title: 'Yellow covers blue',medium: 'Oil and collage',description:'71 x 78 in --Signed',copy: 'Unique',artist_id: 900,date_acquired: '08/23/2009',acquisition_price: 35000.00,asking_price: 60000.00, date_sold:'09/29/2009') do |f|
 	f.id = 571
 end
-Work.create!(id: 578,title: 'Mid Century Hibernation',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist style',copy: '362/500',artist_id: 950,date_acquired: '10/11/2009',acquisition_price: 250.00,asking_price: 500.00) do |f|
+Work.create!(id: 578,title: 'Mid Century Hibernation',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist style',copy: '362/500',artist_id: 900,date_acquired: '10/11/2009',acquisition_price: 250.00,asking_price: 500.00) do |f|
 	f.id = 578
 end
 Work.create!(id: 580,title: 'Forms in Progress I',medium: 'Color aquatint',description:'19.3 x 24.4 in --Signed',copy: 'Unique',artist_id: 700,date_acquired: '02/28/2010',acquisition_price: 2000.00,asking_price: 3500.00,date_sold: '04/26/2010') do |f|
@@ -155,7 +155,7 @@ end
 Work.create!(id: 585,title: 'The Fiddler',medium: 'High Quality Limited Print',description:'Shows Belarusian folk-life themes and symbology',copy: '252/1000',artist_id: 600,date_acquired: '06/08/2010',acquisition_price: 125.00,asking_price: 250.00, date_sold:'09/27/2010') do |f|
 	f.id = 585 
 end
-Work.create!(id: 586,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American Realist style -- From work in Spain',copy: '588/750',artist_id: 650,date_acquired: '06/08/2010',acquisition_price: 200.00,asking_price: 400.00, date_sold:'09/27/2010') do |f|
+Work.create!(id: 586,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American Realist style -- From work in Spain',copy: '588/750',artist_id: 600,date_acquired: '06/08/2010',acquisition_price: 200.00,asking_price: 400.00, date_sold:'09/27/2010') do |f|
 	f.id = 586
 end
 Work.create!(id: 587,title: 'Broadway Boogie',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist Style',copy: '433/500',artist_id: 800,date_acquired: '02/18/1982', acquisition_price: 1000, asking_price: 2000) do |f|
@@ -186,7 +186,7 @@ end
 Work.create!(id: 106, title: 'Memories IV', medium: 'Casein rice paper collage',description: '31 x 24.8 in.',copy: 'Unique',artist_id: 900,date_acquired: '09/29/2009',acquisition_price: 40000.00,asking_price: 75000.00) do |f|
 	f.id = 106
 end
-Work.create!(id: 226,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American Realist style -- From work in Spain',copy: '588/750',artist_id: 650,date_acquired:  '06/08/2010',acquisition_price: 200.00,asking_price: 400.00) do |f|
+Work.create!(id: 226,title: 'Spanish Dancer',medium: 'High Quality Limited Print',description:'American Realist style -- From work in Spain',copy: '588/750',artist_id: 600,date_acquired:  '06/08/2010',acquisition_price: 200.00,asking_price: 400.00) do |f|
 	f.id = 226
 end
 

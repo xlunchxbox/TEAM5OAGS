@@ -1,4 +1,4 @@
-
+<% unless @customer.blank?  %>
 
 <h1>Past Purchases for <%= @customer.last_name %>, <%= @customer.first_name %> </h1>
 <table class = "table table-bordered table-striped">
@@ -10,7 +10,6 @@
 		<th>Date Sold</th>
 		<th>Work ID</th>
 		<th>Title</th>
-		<th>Artist</th>
 	</tr>
 	<% @transaction.each do |k| %>
 	<tr>
@@ -21,7 +20,10 @@
 		<td><%= k.work.date_sold %></td>
 		<td><%= k.work_id %></td>
 		<td><%= k.work.title %></td>
-		<td><%= k.work.artist.last_name %>, <%= k.work.artist.first_name %></td>
 	</tr>
 	<% end %>
 </table>
+
+<% else %>
+<h2>Past Purchase not found!<h2>
+<% end %>

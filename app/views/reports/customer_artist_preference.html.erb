@@ -1,4 +1,4 @@
-
+<% unless @customer.blank?  %>
 
 <h1>Customer Artist Preference Report for:</h1>
 <h1><%= @customer.last_name %> <%= @customer.first_name %></h1>
@@ -18,4 +18,9 @@
 		</tr>
 		<% end %>
 	<% end %>
+	
 </table>
+
+<% else %>
+<h2>Customer not found!<h2>
+<% end %>
