@@ -137,7 +137,7 @@ end
 Work.create!(id: 566,title: 'Into Time',medium: 'High Quality Limited Print',description:'Northwest School Abstract Expressionist style',copy: '323/500',artist_id: 900,date_acquired: '05/18/2009',acquisition_price: 250.00,asking_price: 500.00,date_sold: '09/27/2009') do |f|
 	f.id = 566
 end
-Work.create!(id: 570,title: 'Untitled Number 1',medium: 'Monotype with tempera',description:'4.3 x 6.1 in --Signed',copy: 'Unique',artist_id: 800,date_acquired: '06/28/2009',acquisition_price: 7500.00,asking_price: 15000.00,date_sold: '09/29/2009') do |f|
+Work.create!(id: 570,title: 'Untitled Number 1',medium: 'Monotype with tempera',description:'4.3 x 6.1 in --Signed',copy: 'Unique',artist_id: 800,date_acquired: '06/28/2009',acquisition_price: 7500.00,asking_price: 15000.00,date_sold: '9/29/2009') do |f|
 	f.id = 570
 end
 Work.create!(id: 571,title: 'Yellow covers blue',medium: 'Oil and collage',description:'71 x 78 in --Signed',copy: 'Unique',artist_id: 900,date_acquired: '08/23/2009',acquisition_price: 35000.00,asking_price: 60000.00, date_sold:'09/29/2009') do |f|
