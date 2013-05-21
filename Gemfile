@@ -9,6 +9,7 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'jquery-rails'
 gem 'bcrypt-ruby'
+gem 'thin'
 
 
 group :assets do
