@@ -39,7 +39,7 @@ class ReportsController < ApplicationController
   def speed_of_sale
     artist_id = params[:artist_id]
     @works = Work.scoped
-    @works = @works.where(:artist_id => artist_id).where('date_sold NOT NULL') if artist_id.present?
+    @works = @works.where(:artist_id => artist_id).where('date_sold is NOT NULL') if artist_id.present?
     
     #@works = Work.joins(:transactions).where(params[:artist_id])
     #@works = Work.where(params[:post]).where('date_sold NOT NULL')
